@@ -1,0 +1,30 @@
+C:\Users\user\OneDrive\바탕 화면\Project\Server\PacketGenerator\bin\Debug\net8.0\PacketGenerator.exe
+C:\Users\user\OneDrive\바탕 화면\Project\Server\PacketGenerator\bin\Debug\net8.0\PacketGenerator.deps.json
+C:\Users\user\OneDrive\바탕 화면\Project\Server\PacketGenerator\bin\Debug\net8.0\PacketGenerator.runtimeconfig.json
+C:\Users\user\OneDrive\바탕 화면\Project\Server\PacketGenerator\bin\Debug\net8.0\PacketGenerator.dll
+C:\Users\user\OneDrive\바탕 화면\Project\Server\PacketGenerator\bin\Debug\net8.0\PacketGenerator.pdb
+C:\Users\user\OneDrive\바탕 화면\Project\Server\PacketGenerator\obj\Debug\net8.0\PacketGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\OneDrive\바탕 화면\Project\Server\PacketGenerator\obj\Debug\net8.0\PacketGenerator.AssemblyInfoInputs.cache
+C:\Users\user\OneDrive\바탕 화면\Project\Server\PacketGenerator\obj\Debug\net8.0\PacketGenerator.AssemblyInfo.cs
+C:\Users\user\OneDrive\바탕 화면\Project\Server\PacketGenerator\obj\Debug\net8.0\PacketGenerator.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\바탕 화면\Project\Server\PacketGenerator\obj\Debug\net8.0\PacketGenerator.sourcelink.json
+C:\Users\user\OneDrive\바탕 화면\Project\Server\PacketGenerator\obj\Debug\net8.0\PacketGenerator.dll
+C:\Users\user\OneDrive\바탕 화면\Project\Server\PacketGenerator\obj\Debug\net8.0\refint\PacketGenerator.dll
+C:\Users\user\OneDrive\바탕 화면\Project\Server\PacketGenerator\obj\Debug\net8.0\PacketGenerator.pdb
+C:\Users\user\OneDrive\바탕 화면\Project\Server\PacketGenerator\obj\Debug\net8.0\PacketGenerator.genruntimeconfig.cache
+C:\Users\user\OneDrive\바탕 화면\Project\Server\PacketGenerator\obj\Debug\net8.0\ref\PacketGenerator.dll
+E:\Programming\Server\PacketGenerator\bin\Debug\net8.0\PacketGenerator.exe
+E:\Programming\Server\PacketGenerator\bin\Debug\net8.0\PacketGenerator.deps.json
+E:\Programming\Server\PacketGenerator\bin\Debug\net8.0\PacketGenerator.runtimeconfig.json
+E:\Programming\Server\PacketGenerator\bin\Debug\net8.0\PacketGenerator.dll
+E:\Programming\Server\PacketGenerator\bin\Debug\net8.0\PacketGenerator.pdb
+E:\Programming\Server\PacketGenerator\obj\Debug\net8.0\PacketGenerator.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programming\Server\PacketGenerator\obj\Debug\net8.0\PacketGenerator.AssemblyInfoInputs.cache
+E:\Programming\Server\PacketGenerator\obj\Debug\net8.0\PacketGenerator.AssemblyInfo.cs
+E:\Programming\Server\PacketGenerator\obj\Debug\net8.0\PacketGenerator.csproj.CoreCompileInputs.cache
+E:\Programming\Server\PacketGenerator\obj\Debug\net8.0\PacketGenerator.sourcelink.json
+E:\Programming\Server\PacketGenerator\obj\Debug\net8.0\PacketGenerator.dll
+E:\Programming\Server\PacketGenerator\obj\Debug\net8.0\refint\PacketGenerator.dll
+E:\Programming\Server\PacketGenerator\obj\Debug\net8.0\PacketGenerator.pdb
+E:\Programming\Server\PacketGenerator\obj\Debug\net8.0\PacketGenerator.genruntimeconfig.cache
+E:\Programming\Server\PacketGenerator\obj\Debug\net8.0\ref\PacketGenerator.dll

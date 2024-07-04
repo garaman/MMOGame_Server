@@ -1,0 +1,24 @@
+C:\Users\user\OneDrive\바탕 화면\Project\Server\ServerCore\bin\Debug\net8.0\ServerCore.deps.json
+C:\Users\user\OneDrive\바탕 화면\Project\Server\ServerCore\bin\Debug\net8.0\ServerCore.dll
+C:\Users\user\OneDrive\바탕 화면\Project\Server\ServerCore\bin\Debug\net8.0\ServerCore.pdb
+C:\Users\user\OneDrive\바탕 화면\Project\Server\ServerCore\obj\Debug\net8.0\ServerCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\OneDrive\바탕 화면\Project\Server\ServerCore\obj\Debug\net8.0\ServerCore.AssemblyInfoInputs.cache
+C:\Users\user\OneDrive\바탕 화면\Project\Server\ServerCore\obj\Debug\net8.0\ServerCore.AssemblyInfo.cs
+C:\Users\user\OneDrive\바탕 화면\Project\Server\ServerCore\obj\Debug\net8.0\ServerCore.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\바탕 화면\Project\Server\ServerCore\obj\Debug\net8.0\ServerCore.sourcelink.json
+C:\Users\user\OneDrive\바탕 화면\Project\Server\ServerCore\obj\Debug\net8.0\ServerCore.dll
+C:\Users\user\OneDrive\바탕 화면\Project\Server\ServerCore\obj\Debug\net8.0\refint\ServerCore.dll
+C:\Users\user\OneDrive\바탕 화면\Project\Server\ServerCore\obj\Debug\net8.0\ServerCore.pdb
+C:\Users\user\OneDrive\바탕 화면\Project\Server\ServerCore\obj\Debug\net8.0\ref\ServerCore.dll
+E:\Programming\Server\ServerCore\bin\Debug\net8.0\ServerCore.deps.json
+E:\Programming\Server\ServerCore\bin\Debug\net8.0\ServerCore.dll
+E:\Programming\Server\ServerCore\bin\Debug\net8.0\ServerCore.pdb
+E:\Programming\Server\ServerCore\obj\Debug\net8.0\ServerCore.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programming\Server\ServerCore\obj\Debug\net8.0\ServerCore.AssemblyInfoInputs.cache
+E:\Programming\Server\ServerCore\obj\Debug\net8.0\ServerCore.AssemblyInfo.cs
+E:\Programming\Server\ServerCore\obj\Debug\net8.0\ServerCore.csproj.CoreCompileInputs.cache
+E:\Programming\Server\ServerCore\obj\Debug\net8.0\ServerCore.sourcelink.json
+E:\Programming\Server\ServerCore\obj\Debug\net8.0\ServerCore.dll
+E:\Programming\Server\ServerCore\obj\Debug\net8.0\refint\ServerCore.dll
+E:\Programming\Server\ServerCore\obj\Debug\net8.0\ServerCore.pdb
+E:\Programming\Server\ServerCore\obj\Debug\net8.0\ref\ServerCore.dll
