@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "Google.Protobuf/3.27.2": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Google.Protobuf.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Google.Protobuf.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "ServerCore/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -15,6 +28,29 @@
     }
   },
   "libraries": {
+    "Google.Protobuf/3.27.2": {
+      "sha512": "0wdgA3LO9mBS477jieBFs4pU1sWhVtwv/P+i9nAEiFDQyUA7PPHDBbJL1CeqYtV18jLiq9og4n7wSVCO171OBg==",
+      "type": "package",
+      "path": "google.protobuf/3.27.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "google.protobuf.3.27.2.nupkg.sha512",
+        "google.protobuf.nuspec",
+        "lib/net45/Google.Protobuf.dll",
+        "lib/net45/Google.Protobuf.pdb",
+        "lib/net45/Google.Protobuf.xml",
+        "lib/net5.0/Google.Protobuf.dll",
+        "lib/net5.0/Google.Protobuf.pdb",
+        "lib/net5.0/Google.Protobuf.xml",
+        "lib/netstandard1.1/Google.Protobuf.dll",
+        "lib/netstandard1.1/Google.Protobuf.pdb",
+        "lib/netstandard1.1/Google.Protobuf.xml",
+        "lib/netstandard2.0/Google.Protobuf.dll",
+        "lib/netstandard2.0/Google.Protobuf.pdb",
+        "lib/netstandard2.0/Google.Protobuf.xml"
+      ]
+    },
     "ServerCore/1.0.0": {
       "type": "project",
       "path": "../ServerCore/ServerCore.csproj",
@@ -23,6 +59,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Google.Protobuf >= 3.27.2",
       "ServerCore >= 1.0.0"
     ]
   },
@@ -33,11 +70,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Programming\\MMOGame\\Server\\Server\\Server.csproj",
+      "projectUniqueName": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Server.csproj",
       "projectName": "Server",
-      "projectPath": "E:\\Programming\\MMOGame\\Server\\Server\\Server.csproj",
+      "projectPath": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Server.csproj",
       "packagesPath": "C:\\Users\\ahs20\\.nuget\\packages\\",
-      "outputPath": "E:\\Programming\\MMOGame\\Server\\Server\\obj\\",
+      "outputPath": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -59,8 +96,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\Programming\\MMOGame\\Server\\ServerCore\\ServerCore.csproj": {
-              "projectPath": "E:\\Programming\\MMOGame\\Server\\ServerCore\\ServerCore.csproj"
+            "E:\\Programming\\MMOGame\\MMOGame_Server\\ServerCore\\ServerCore.csproj": {
+              "projectPath": "E:\\Programming\\MMOGame\\MMOGame_Server\\ServerCore\\ServerCore.csproj"
             }
           }
         }
@@ -79,6 +116,12 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "Google.Protobuf": {
+            "target": "Package",
+            "version": "[3.27.2, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DEVk7P+JWio=",
+  "dgSpecHash": "WnJ2+WyGyRk=",
   "success": true,
-  "projectFilePath": "E:\\Programming\\MMOGame\\Server\\ServerCore\\ServerCore.csproj",
+  "projectFilePath": "E:\\Programming\\MMOGame\\MMOGame_Server\\ServerCore\\ServerCore.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

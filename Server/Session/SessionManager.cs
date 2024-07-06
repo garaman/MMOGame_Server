@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace Server.Session
+namespace Server
 {
     class SessionManager
     {
         static SessionManager _session = new SessionManager();
-        public static SessionManager instance { get { return _session; } }
+        public static SessionManager Instance { get { return _session; } }
 
         int _sessionId = 0;
         Dictionary<int, ClientSession> _sessions = new Dictionary<int, ClientSession>();

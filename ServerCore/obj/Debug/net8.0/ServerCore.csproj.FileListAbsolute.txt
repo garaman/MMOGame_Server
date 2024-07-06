@@ -22,3 +22,15 @@ E:\Programming\Server\ServerCore\obj\Debug\net8.0\ServerCore.dll
 E:\Programming\Server\ServerCore\obj\Debug\net8.0\refint\ServerCore.dll
 E:\Programming\Server\ServerCore\obj\Debug\net8.0\ServerCore.pdb
 E:\Programming\Server\ServerCore\obj\Debug\net8.0\ref\ServerCore.dll
+E:\Programming\MMOGame\MMOGame_Server\ServerCore\bin\Debug\net8.0\ServerCore.deps.json
+E:\Programming\MMOGame\MMOGame_Server\ServerCore\bin\Debug\net8.0\ServerCore.dll
+E:\Programming\MMOGame\MMOGame_Server\ServerCore\bin\Debug\net8.0\ServerCore.pdb
+E:\Programming\MMOGame\MMOGame_Server\ServerCore\obj\Debug\net8.0\ServerCore.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programming\MMOGame\MMOGame_Server\ServerCore\obj\Debug\net8.0\ServerCore.AssemblyInfoInputs.cache
+E:\Programming\MMOGame\MMOGame_Server\ServerCore\obj\Debug\net8.0\ServerCore.AssemblyInfo.cs
+E:\Programming\MMOGame\MMOGame_Server\ServerCore\obj\Debug\net8.0\ServerCore.csproj.CoreCompileInputs.cache
+E:\Programming\MMOGame\MMOGame_Server\ServerCore\obj\Debug\net8.0\ServerCore.sourcelink.json
+E:\Programming\MMOGame\MMOGame_Server\ServerCore\obj\Debug\net8.0\ServerCore.dll
+E:\Programming\MMOGame\MMOGame_Server\ServerCore\obj\Debug\net8.0\refint\ServerCore.dll
+E:\Programming\MMOGame\MMOGame_Server\ServerCore\obj\Debug\net8.0\ServerCore.pdb
+E:\Programming\MMOGame\MMOGame_Server\ServerCore\obj\Debug\net8.0\ref\ServerCore.dll

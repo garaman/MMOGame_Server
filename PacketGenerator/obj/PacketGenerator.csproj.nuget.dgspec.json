@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Programming\\MMOGame\\Server\\PacketGenerator\\PacketGenerator.csproj": {}
+    "E:\\Programming\\MMOGame\\MMOGame_Server\\PacketGenerator\\PacketGenerator.csproj": {}
   },
   "projects": {
-    "E:\\Programming\\MMOGame\\Server\\PacketGenerator\\PacketGenerator.csproj": {
+    "E:\\Programming\\MMOGame\\MMOGame_Server\\PacketGenerator\\PacketGenerator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Programming\\MMOGame\\Server\\PacketGenerator\\PacketGenerator.csproj",
+        "projectUniqueName": "E:\\Programming\\MMOGame\\MMOGame_Server\\PacketGenerator\\PacketGenerator.csproj",
         "projectName": "PacketGenerator",
-        "projectPath": "E:\\Programming\\MMOGame\\Server\\PacketGenerator\\PacketGenerator.csproj",
+        "projectPath": "E:\\Programming\\MMOGame\\MMOGame_Server\\PacketGenerator\\PacketGenerator.csproj",
         "packagesPath": "C:\\Users\\ahs20\\.nuget\\packages\\",
-        "outputPath": "E:\\Programming\\MMOGame\\Server\\PacketGenerator\\obj\\",
+        "outputPath": "E:\\Programming\\MMOGame\\MMOGame_Server\\PacketGenerator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.27.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Programming\\MMOGame\\Server\\Server\\Server.csproj": {}
+    "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Server.csproj": {}
   },
   "projects": {
-    "E:\\Programming\\MMOGame\\Server\\ServerCore\\ServerCore.csproj": {
+    "E:\\Programming\\MMOGame\\MMOGame_Server\\ServerCore\\ServerCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Programming\\MMOGame\\Server\\ServerCore\\ServerCore.csproj",
+        "projectUniqueName": "E:\\Programming\\MMOGame\\MMOGame_Server\\ServerCore\\ServerCore.csproj",
         "projectName": "ServerCore",
-        "projectPath": "E:\\Programming\\MMOGame\\Server\\ServerCore\\ServerCore.csproj",
+        "projectPath": "E:\\Programming\\MMOGame\\MMOGame_Server\\ServerCore\\ServerCore.csproj",
         "packagesPath": "C:\\Users\\ahs20\\.nuget\\packages\\",
-        "outputPath": "E:\\Programming\\MMOGame\\Server\\ServerCore\\obj\\",
+        "outputPath": "E:\\Programming\\MMOGame\\MMOGame_Server\\ServerCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "E:\\Programming\\MMOGame\\Server\\Server\\Server.csproj": {
+    "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Programming\\MMOGame\\Server\\Server\\Server.csproj",
+        "projectUniqueName": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Server.csproj",
         "projectName": "Server",
-        "projectPath": "E:\\Programming\\MMOGame\\Server\\Server\\Server.csproj",
+        "projectPath": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Server.csproj",
         "packagesPath": "C:\\Users\\ahs20\\.nuget\\packages\\",
-        "outputPath": "E:\\Programming\\MMOGame\\Server\\Server\\obj\\",
+        "outputPath": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -98,8 +98,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Programming\\MMOGame\\Server\\ServerCore\\ServerCore.csproj": {
-                "projectPath": "E:\\Programming\\MMOGame\\Server\\ServerCore\\ServerCore.csproj"
+              "E:\\Programming\\MMOGame\\MMOGame_Server\\ServerCore\\ServerCore.csproj": {
+                "projectPath": "E:\\Programming\\MMOGame\\MMOGame_Server\\ServerCore\\ServerCore.csproj"
               }
             }
           }
@@ -118,6 +118,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.27.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
