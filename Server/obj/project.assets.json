@@ -64,24 +64,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ahs20\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Server.csproj",
+      "projectUniqueName": "C:\\Users\\user\\OneDrive\\바탕 화면\\Project\\MMOGame\\MMOGame_Server\\Server\\Server.csproj",
       "projectName": "Server",
-      "projectPath": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Server.csproj",
-      "packagesPath": "C:\\Users\\ahs20\\.nuget\\packages\\",
-      "outputPath": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\obj\\",
+      "projectPath": "C:\\Users\\user\\OneDrive\\바탕 화면\\Project\\MMOGame\\MMOGame_Server\\Server\\Server.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\OneDrive\\바탕 화면\\Project\\MMOGame\\MMOGame_Server\\Server\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ahs20\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -96,8 +91,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\Programming\\MMOGame\\MMOGame_Server\\ServerCore\\ServerCore.csproj": {
-              "projectPath": "E:\\Programming\\MMOGame\\MMOGame_Server\\ServerCore\\ServerCore.csproj"
+            "C:\\Users\\user\\OneDrive\\바탕 화면\\Project\\MMOGame\\MMOGame_Server\\ServerCore\\ServerCore.csproj": {
+              "projectPath": "C:\\Users\\user\\OneDrive\\바탕 화면\\Project\\MMOGame\\MMOGame_Server\\ServerCore\\ServerCore.csproj"
             }
           }
         }
