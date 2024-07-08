@@ -56,3 +56,23 @@ C:\Users\user\OneDrive\바탕 화면\Project\MMOGame\MMOGame_Server\Server\obj\D
 C:\Users\user\OneDrive\바탕 화면\Project\MMOGame\MMOGame_Server\Server\obj\Debug\net8.0\Server.pdb
 C:\Users\user\OneDrive\바탕 화면\Project\MMOGame\MMOGame_Server\Server\obj\Debug\net8.0\Server.genruntimeconfig.cache
 C:\Users\user\OneDrive\바탕 화면\Project\MMOGame\MMOGame_Server\Server\obj\Debug\net8.0\ref\Server.dll
+E:\Programming\MMOGame\MMOGame_Server\Server\bin\Debug\net8.0\Server.exe
+E:\Programming\MMOGame\MMOGame_Server\Server\bin\Debug\net8.0\Server.deps.json
+E:\Programming\MMOGame\MMOGame_Server\Server\bin\Debug\net8.0\Server.runtimeconfig.json
+E:\Programming\MMOGame\MMOGame_Server\Server\bin\Debug\net8.0\Server.dll
+E:\Programming\MMOGame\MMOGame_Server\Server\bin\Debug\net8.0\Server.pdb
+E:\Programming\MMOGame\MMOGame_Server\Server\bin\Debug\net8.0\Google.Protobuf.dll
+E:\Programming\MMOGame\MMOGame_Server\Server\bin\Debug\net8.0\ServerCore.dll
+E:\Programming\MMOGame\MMOGame_Server\Server\bin\Debug\net8.0\ServerCore.pdb
+E:\Programming\MMOGame\MMOGame_Server\Server\obj\Debug\net8.0\Server.csproj.AssemblyReference.cache
+E:\Programming\MMOGame\MMOGame_Server\Server\obj\Debug\net8.0\Server.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programming\MMOGame\MMOGame_Server\Server\obj\Debug\net8.0\Server.AssemblyInfoInputs.cache
+E:\Programming\MMOGame\MMOGame_Server\Server\obj\Debug\net8.0\Server.AssemblyInfo.cs
+E:\Programming\MMOGame\MMOGame_Server\Server\obj\Debug\net8.0\Server.csproj.CoreCompileInputs.cache
+E:\Programming\MMOGame\MMOGame_Server\Server\obj\Debug\net8.0\Server.sourcelink.json
+E:\Programming\MMOGame\MMOGame_Server\Server\obj\Debug\net8.0\Server.csproj.Up2Date
+E:\Programming\MMOGame\MMOGame_Server\Server\obj\Debug\net8.0\Server.dll
+E:\Programming\MMOGame\MMOGame_Server\Server\obj\Debug\net8.0\refint\Server.dll
+E:\Programming\MMOGame\MMOGame_Server\Server\obj\Debug\net8.0\Server.pdb
+E:\Programming\MMOGame\MMOGame_Server\Server\obj\Debug\net8.0\Server.genruntimeconfig.cache
+E:\Programming\MMOGame\MMOGame_Server\Server\obj\Debug\net8.0\ref\Server.dll

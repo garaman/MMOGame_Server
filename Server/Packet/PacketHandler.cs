@@ -8,11 +8,28 @@ using System.Text;
 
 class PacketHandler
 {
-    public static void C_ChatHandler(PacketSession session, IMessage packet)
+    public static void C_MoveHandler(PacketSession session, IMessage packet)
     {
-        S_Chat chatPacket = packet as S_Chat;
-        ClientSession serverSession = session as ClientSession;
+        C_Move movePacket = packet as C_Move;
+        ClientSession clientSession = session as ClientSession;
 
-        Console.WriteLine(chatPacket.Context);
+        Console.WriteLine($"C_Move ({movePacket.PosInfo.PosX} , {movePacket.PosInfo.PosY})");
+
+        if(clientSession.MyPlayer == null) { return; }
+        if(clientSession.MyPlayer.Room == null) { return; }
+
+        // TODO : 검증
+
+        // 서버에서 좌표이동.
+        PlayerInfo info = clientSession.MyPlayer.Info;
+        info.PosInfo = movePacket.PosInfo;
+
+        // 다른 플레이어에게 이동정보 전송.
+        S_Move resMovePacket = new S_Move();
+        resMovePacket.PlayerId = clientSession.MyPlayer.Info.PlayerId;
+        resMovePacket.PosInfo = movePacket.PosInfo;
+
+        clientSession.MyPlayer.Room.Broadcast(resMovePacket);
+
     }
 }

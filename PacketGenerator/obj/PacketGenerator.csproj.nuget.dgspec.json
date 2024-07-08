@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\OneDrive\\바탕 화면\\Project\\MMOGame\\MMOGame_Server\\PacketGenerator\\PacketGenerator.csproj": {}
+    "E:\\Programming\\MMOGame\\MMOGame_Server\\PacketGenerator\\PacketGenerator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\OneDrive\\바탕 화면\\Project\\MMOGame\\MMOGame_Server\\PacketGenerator\\PacketGenerator.csproj": {
+    "E:\\Programming\\MMOGame\\MMOGame_Server\\PacketGenerator\\PacketGenerator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\OneDrive\\바탕 화면\\Project\\MMOGame\\MMOGame_Server\\PacketGenerator\\PacketGenerator.csproj",
+        "projectUniqueName": "E:\\Programming\\MMOGame\\MMOGame_Server\\PacketGenerator\\PacketGenerator.csproj",
         "projectName": "PacketGenerator",
-        "projectPath": "C:\\Users\\user\\OneDrive\\바탕 화면\\Project\\MMOGame\\MMOGame_Server\\PacketGenerator\\PacketGenerator.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\OneDrive\\바탕 화면\\Project\\MMOGame\\MMOGame_Server\\PacketGenerator\\obj\\",
+        "projectPath": "E:\\Programming\\MMOGame\\MMOGame_Server\\PacketGenerator\\PacketGenerator.csproj",
+        "packagesPath": "C:\\Users\\ahs20\\.nuget\\packages\\",
+        "outputPath": "E:\\Programming\\MMOGame\\MMOGame_Server\\PacketGenerator\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ahs20\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
