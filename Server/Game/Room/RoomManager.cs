@@ -4,19 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Server.Game
+namespace Server.Game.Room
 {
     internal class RoomManager
     {
         public static RoomManager Instance { get; } = new RoomManager();
 
         object _lock = new object();
-        Dictionary<int,GameRoom> _rooms = new Dictionary<int,GameRoom>();
+        Dictionary<int, GameRoom> _rooms = new Dictionary<int, GameRoom>();
         int _roomId = 1;
 
-        public GameRoom Add()
+        public GameRoom Add(int mapId)
         {
             GameRoom gameRoom = new GameRoom();
+            gameRoom.Init(mapId);
 
             lock (_lock)
             {
@@ -31,7 +32,7 @@ namespace Server.Game
         {
             lock (_lock)
             {
-                return _rooms.Remove(roomId);                
+                return _rooms.Remove(roomId);
             }
         }
 
@@ -45,7 +46,7 @@ namespace Server.Game
                     return room;
                 }
                 return null;
-            }            
+            }
         }
     }
 }

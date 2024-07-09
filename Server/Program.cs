@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using Google.Protobuf;
 using Google.Protobuf.Protocol;
 using Google.Protobuf.WellKnownTypes;
-using Server.Game;
+using Server.Game.Room;
 using ServerCore;
 
 namespace Server
@@ -25,7 +25,7 @@ namespace Server
 
         static void Main(string[] args)
         {
-            RoomManager.Instance.Add();
+            RoomManager.Instance.Add(1);
 
             // DNS (Domain Name System)
             string host = Dns.GetHostName();
