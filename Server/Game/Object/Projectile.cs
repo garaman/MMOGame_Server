@@ -13,5 +13,10 @@ namespace Server.Game.Object
         {
             ObjectType = GameObjectType.Projectile;
         }
+
+        public virtual void Update()
+        {
+
+        }
     }
 }

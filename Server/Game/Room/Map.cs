@@ -59,7 +59,7 @@ namespace Server.Game.Room
         public int SizeY { get { return MaxY - MinY; } }
 
         bool[,] _collision;
-        Player[,] _players;
+        GameObject[,] _objects;
 
         public bool CanGo(Vector2Int cellPos, bool checkObjects = true)
         {
@@ -68,48 +68,54 @@ namespace Server.Game.Room
 
             int x = cellPos.x - MinX;
             int y = MaxY - cellPos.y;
+            if (x >= MaxX - MinX || y >= MaxY - MinY) { return false; }
 
-            return !_collision[y, x] && (!checkObjects || _players[y, x] == null);
+            return !_collision[y, x] && (!checkObjects || _objects[y, x] == null);
         }
-        public Player Find(Vector2Int cellPos)
+        public GameObject Find(Vector2Int cellPos)
         {
             if (cellPos.x < MinX || cellPos.x > MaxX) { return null; }
             if (cellPos.y < MinY || cellPos.y > MaxY) { return null; }
 
             int x = cellPos.x - MinX;
             int y = MaxY - cellPos.y;
+            if (x >= MaxX - MinX || y >= MaxY - MinY) { return null; }
 
-            return _players[y, x];
+            return _objects[y, x];
         }
 
-        public bool ApplyMove(Player player, Vector2Int dest)
+        public bool ApplyMove(GameObject gameObject, Vector2Int dest)
         {
-            PositionInfo posInfo = player.Info.PosInfo;
-            if (posInfo.PosX < MinX || posInfo.PosX > MaxX) { return false; }
-            if (posInfo.PosY < MinY || posInfo.PosY > MaxY) { return false; }
-
+            ApplyLeave(gameObject);
             if (CanGo(dest, true) == false) { return false; }
 
-            {
-                int x = posInfo.PosX - MinX;
-                int y = MaxY - posInfo.PosY;
-                if (_players[y, x] == player)
-                {
-                    _players[y, x] = null;
-                }
-            }
-            {
-                int x = dest.x - MinX;
-                int y = MaxY - dest.y;
-                _players[y, x] = player;
-            }
+            PositionInfo posInfo = gameObject.PosInfo;            
+            int x = dest.x - MinX;
+            int y = MaxY - dest.y;
+            _objects[y, x] = gameObject;           
 
             posInfo.PosX = dest.x;
             posInfo.PosY = dest.y;
             return true;
         }
 
+        public bool ApplyLeave(GameObject gameObject)
+        {
+            PositionInfo posInfo = gameObject.PosInfo;
+            if (posInfo.PosX < MinX || posInfo.PosX > MaxX) { return false; }
+            if (posInfo.PosY < MinY || posInfo.PosY > MaxY) { return false; }
+            
+            int x = posInfo.PosX - MinX;
+            int y = MaxY - posInfo.PosY;
+            if (x >= MaxX - MinX || y >= MaxY - MinY) { return false; }
 
+            if (_objects[y, x] == gameObject)
+            {
+                _objects[y, x] = null;
+            }           
+
+            return true;
+        }
 
         public void LoadMap(int mapId, string pathPrefix = "../../../../../Common/MapData")
         {
@@ -125,7 +131,7 @@ namespace Server.Game.Room
             int xCount = MaxX - MinX;
             int yCount = MaxY - MinY;
             _collision = new bool[yCount, xCount];
-            _players = new Player[yCount, xCount];
+            _objects = new GameObject[yCount, xCount];
 
             for (int y = 0; y < yCount; y++)
             {
