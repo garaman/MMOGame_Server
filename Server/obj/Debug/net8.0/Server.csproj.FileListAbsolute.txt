@@ -76,3 +76,4 @@ E:\Programming\MMOGame\MMOGame_Server\Server\obj\Debug\net8.0\refint\Server.dll
 E:\Programming\MMOGame\MMOGame_Server\Server\obj\Debug\net8.0\Server.pdb
 E:\Programming\MMOGame\MMOGame_Server\Server\obj\Debug\net8.0\Server.genruntimeconfig.cache
 E:\Programming\MMOGame\MMOGame_Server\Server\obj\Debug\net8.0\ref\Server.dll
+E:\Programming\MMOGame\MMOGame_Server\Server\bin\Debug\net8.0\Newtonsoft.Json.dll
