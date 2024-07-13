@@ -40,7 +40,7 @@ namespace Server.Game.Object
                 GameObject target = Room.Map.Find(destPos);
                 if (target != null)
                 {
-
+                    target.OnDamaged(this, Data.damage + Owner.Stat.Attack);                
                 }
                 
                 Room.LeaveGame(Id);
