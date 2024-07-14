@@ -109,6 +109,9 @@ namespace Server.Game.Room
 
         public bool ApplyLeave(GameObject gameObject)
         {
+            if (gameObject.Room == null) { return false; }
+            if (gameObject.Room.Map != this) { return false; }
+
             PositionInfo posInfo = gameObject.PosInfo;
             if (posInfo.PosX < MinX || posInfo.PosX > MaxX) { return false; }
             if (posInfo.PosY < MinY || posInfo.PosY > MaxY) { return false; }

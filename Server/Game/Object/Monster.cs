@@ -20,7 +20,7 @@ namespace Server.Game.Object
             Stat.Level = 1;
             Stat.Hp = 100;
             Stat.MaxHp = 100;
-            Stat.Speed = 4.5f;
+            Stat.Speed = 4.0f;
 
             State = CreatureState.Idle;
         }

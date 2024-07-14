@@ -3,28 +3,56 @@
   "WorkspaceRootPath": "E:\\Programming\\MMOGame\\MMOGame_Server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|e:\\programming\\mmogame\\mmogame_server\\server\\game\\object\\monster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|solutionrelative:server\\game\\object\\monster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|e:\\programming\\mmogame\\mmogame_server\\server\\game\\object\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|solutionrelative:server\\game\\object\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|e:\\programming\\mmogame\\mmogame_server\\server\\game\\object\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|solutionrelative:server\\game\\object\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|e:\\programming\\mmogame\\mmogame_server\\server\\game\\job\\jobserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|solutionrelative:server\\game\\job\\jobserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|e:\\programming\\mmogame\\mmogame_server\\server\\game\\room\\gameroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|solutionrelative:server\\game\\room\\gameroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|e:\\programming\\mmogame\\mmogame_server\\server\\packet\\packethandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|solutionrelative:server\\packet\\packethandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|e:\\programming\\mmogame\\mmogame_server\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|e:\\programming\\mmogame\\mmogame_server\\server\\game\\room\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|solutionrelative:server\\game\\room\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|e:\\programming\\mmogame\\mmogame_server\\server\\game\\object\\monster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|solutionrelative:server\\game\\object\\monster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|e:\\programming\\mmogame\\mmogame_server\\server\\game\\job\\jobtimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|solutionrelative:server\\game\\job\\jobtimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|e:\\programming\\mmogame\\mmogame_server\\server\\game\\object\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|solutionrelative:server\\game\\object\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|e:\\programming\\mmogame\\mmogame_server\\server\\session\\clientsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|solutionrelative:server\\session\\clientsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|e:\\programming\\mmogame\\mmogame_server\\server\\game\\object\\arrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|solutionrelative:server\\game\\object\\arrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|e:\\programming\\mmogame\\mmogame_server\\server\\game\\room\\roommanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|solutionrelative:server\\game\\room\\roommanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|e:\\programming\\mmogame\\mmogame_server\\server\\game\\job\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|solutionrelative:server\\game\\job\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|e:\\programming\\mmogame\\mmogame_server\\server\\game\\object\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|solutionrelative:server\\game\\object\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|e:\\programming\\mmogame\\mmogame_server\\server\\game\\object\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,20 +66,12 @@
       "RelativeMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|solutionrelative:server\\data\\data.contents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|e:\\programming\\mmogame\\mmogame_server\\server\\session\\clientsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|solutionrelative:server\\session\\clientsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|e:\\programming\\mmogame\\mmogame_server\\server\\game\\object\\objectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|solutionrelative:server\\game\\object\\objectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|e:\\programming\\mmogame\\mmogame_server\\server\\data\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|solutionrelative:server\\data\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|e:\\programming\\mmogame\\mmogame_server\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\bin\\Debug\\net8.0\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -63,14 +83,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|e:\\programming\\mmogame\\mmogame_server\\server\\data\\configmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|solutionrelative:server\\data\\configmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|e:\\programming\\mmogame\\mmogame_server\\server\\packet\\packethandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|solutionrelative:server\\packet\\packethandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|e:\\programming\\mmogame\\mmogame_server\\server\\game\\room\\roommanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|solutionrelative:server\\game\\room\\roommanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB46D2BF-B5F0-4B22-8898-AA5BB1F27D99}|Server\\Server.csproj|e:\\programming\\mmogame\\mmogame_server\\server\\packet\\serverpacketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -92,7 +104,99 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
+              "Title": "GameRoom.cs",
+              "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Room\\GameRoom.cs",
+              "RelativeDocumentMoniker": "Server\\Game\\Room\\GameRoom.cs",
+              "ToolTip": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Room\\GameRoom.cs",
+              "RelativeToolTip": "Server\\Game\\Room\\GameRoom.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAALoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T01:18:54.623Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "JobTimer.cs",
+              "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Job\\JobTimer.cs",
+              "RelativeDocumentMoniker": "Server\\Game\\Job\\JobTimer.cs",
+              "ToolTip": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Job\\JobTimer.cs",
+              "RelativeToolTip": "Server\\Game\\Job\\JobTimer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T08:35:08.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GameObject.cs",
+              "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Object\\GameObject.cs",
+              "RelativeDocumentMoniker": "Server\\Game\\Object\\GameObject.cs",
+              "ToolTip": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Object\\GameObject.cs",
+              "RelativeToolTip": "Server\\Game\\Object\\GameObject.cs",
+              "ViewState": "AQIAAG4AAAAAAAAAAADgv4wAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T09:20:54.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "JobSerializer.cs",
+              "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Job\\JobSerializer.cs",
+              "RelativeDocumentMoniker": "Server\\Game\\Job\\JobSerializer.cs",
+              "ToolTip": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Job\\JobSerializer.cs",
+              "RelativeToolTip": "Server\\Game\\Job\\JobSerializer.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAmwDgAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T04:57:28.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Monster.cs",
+              "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Object\\Monster.cs",
+              "RelativeDocumentMoniker": "Server\\Game\\Object\\Monster.cs",
+              "ToolTip": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Object\\Monster.cs",
+              "RelativeToolTip": "Server\\Game\\Object\\Monster.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAADwv3kAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T09:09:20.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Job.cs",
+              "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Job\\Job.cs",
+              "RelativeDocumentMoniker": "Server\\Game\\Job\\Job.cs",
+              "ToolTip": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Job\\Job.cs",
+              "RelativeToolTip": "Server\\Game\\Job\\Job.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T04:49:52.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Arrow.cs",
+              "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Object\\Arrow.cs",
+              "RelativeDocumentMoniker": "Server\\Game\\Object\\Arrow.cs",
+              "ToolTip": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Object\\Arrow.cs",
+              "RelativeToolTip": "Server\\Game\\Object\\Arrow.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAD4vy0AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T09:13:05.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "Data.Contents.cs",
               "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Data\\Data.Contents.cs",
               "RelativeDocumentMoniker": "Server\\Data\\Data.Contents.cs",
@@ -100,64 +204,11 @@
               "RelativeToolTip": "Server\\Data\\Data.Contents.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAAhwDIAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T02:10:47.336Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-12T02:10:47.336Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GameObject.cs",
-              "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Object\\GameObject.cs",
-              "RelativeDocumentMoniker": "Server\\Game\\Object\\GameObject.cs",
-              "ToolTip": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Object\\GameObject.cs",
-              "RelativeToolTip": "Server\\Game\\Object\\GameObject.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAwwB8AAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T09:20:54.751Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GameRoom.cs",
-              "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Room\\GameRoom.cs",
-              "RelativeDocumentMoniker": "Server\\Game\\Room\\GameRoom.cs",
-              "ToolTip": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Room\\GameRoom.cs",
-              "RelativeToolTip": "Server\\Game\\Room\\GameRoom.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAAAC0AAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T01:18:54.623Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Monster.cs",
-              "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Object\\Monster.cs",
-              "RelativeDocumentMoniker": "Server\\Game\\Object\\Monster.cs",
-              "ToolTip": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Object\\Monster.cs",
-              "RelativeToolTip": "Server\\Game\\Object\\Monster.cs",
-              "ViewState": "AQIAAGIAAAAAAAAAAAAUwBYAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-13T09:09:20.337Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Arrow.cs",
-              "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Object\\Arrow.cs",
-              "RelativeDocumentMoniker": "Server\\Game\\Object\\Arrow.cs",
-              "ToolTip": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Object\\Arrow.cs",
-              "RelativeToolTip": "Server\\Game\\Object\\Arrow.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T09:13:05.196Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "Player.cs",
               "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Object\\Player.cs",
               "RelativeDocumentMoniker": "Server\\Game\\Object\\Player.cs",
@@ -165,25 +216,11 @@
               "RelativeToolTip": "Server\\Game\\Object\\Player.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-13T03:02:49.21Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-13T03:02:49.21Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Program.cs",
-              "RelativeDocumentMoniker": "Server\\Program.cs",
-              "ToolTip": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Program.cs",
-              "RelativeToolTip": "Server\\Program.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAtwCQAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T02:48:17.779Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "ServerPacketManager.cs",
               "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Packet\\ServerPacketManager.cs",
               "RelativeDocumentMoniker": "Server\\Packet\\ServerPacketManager.cs",
@@ -195,19 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "RoomManager.cs",
-              "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Room\\RoomManager.cs",
-              "RelativeDocumentMoniker": "Server\\Game\\Room\\RoomManager.cs",
-              "ToolTip": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Room\\RoomManager.cs",
-              "RelativeToolTip": "Server\\Game\\Room\\RoomManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T01:18:31.875Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\PacketGenerator\\Program.cs",
               "RelativeDocumentMoniker": "PacketGenerator\\Program.cs",
@@ -221,11 +246,11 @@
         },
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "Protocol.proto",
               "DocumentMoniker": "E:\\Programming\\MMOGame\\Common\\protoc-27.2-win64\\bin\\Protocol.proto",
               "RelativeDocumentMoniker": "..\\Common\\protoc-27.2-win64\\bin\\Protocol.proto",
@@ -234,25 +259,88 @@
               "ViewState": "AQIAAEsAAAAAAAAAAAAAAGAAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
               "WhenOpened": "2024-07-13T03:33:18.27Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Program.cs",
+              "RelativeDocumentMoniker": "Server\\Program.cs",
+              "ToolTip": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Program.cs",
+              "RelativeToolTip": "Server\\Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAADcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T02:48:17.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RoomManager.cs",
+              "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Room\\RoomManager.cs",
+              "RelativeDocumentMoniker": "Server\\Game\\Room\\RoomManager.cs",
+              "ToolTip": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Room\\RoomManager.cs",
+              "RelativeToolTip": "Server\\Game\\Room\\RoomManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T01:18:31.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PacketHandler.cs",
+              "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Packet\\PacketHandler.cs",
+              "RelativeDocumentMoniker": "Server\\Packet\\PacketHandler.cs",
+              "ToolTip": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Packet\\PacketHandler.cs",
+              "RelativeToolTip": "Server\\Packet\\PacketHandler.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAvwBkAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T08:30:18.719Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "config.json",
-              "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\bin\\Debug\\net8.0\\config.json",
-              "RelativeDocumentMoniker": "Server\\bin\\Debug\\net8.0\\config.json",
-              "ToolTip": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\bin\\Debug\\net8.0\\config.json",
-              "RelativeToolTip": "Server\\bin\\Debug\\net8.0\\config.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-12T02:16:17.481Z",
+              "Title": "Projectile.cs",
+              "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Object\\Projectile.cs",
+              "RelativeDocumentMoniker": "Server\\Game\\Object\\Projectile.cs",
+              "ToolTip": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Object\\Projectile.cs",
+              "RelativeToolTip": "Server\\Game\\Object\\Projectile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T01:40:48.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Map.cs",
+              "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Room\\Map.cs",
+              "RelativeDocumentMoniker": "Server\\Game\\Room\\Map.cs",
+              "ToolTip": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Room\\Map.cs",
+              "RelativeToolTip": "Server\\Game\\Room\\Map.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAgwF8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T05:41:08.429Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 8,
+              "Title": "ClientSession.cs",
+              "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Session\\ClientSession.cs",
+              "RelativeDocumentMoniker": "Server\\Session\\ClientSession.cs",
+              "ToolTip": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Session\\ClientSession.cs",
+              "RelativeToolTip": "Server\\Session\\ClientSession.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAvwEIAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T04:01:37.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "ConfigManager.cs",
               "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Data\\ConfigManager.cs",
               "RelativeDocumentMoniker": "Server\\Data\\ConfigManager.cs",
@@ -264,33 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Projectile.cs",
-              "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Object\\Projectile.cs",
-              "RelativeDocumentMoniker": "Server\\Game\\Object\\Projectile.cs",
-              "ToolTip": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Object\\Projectile.cs",
-              "RelativeToolTip": "Server\\Game\\Object\\Projectile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T01:40:48.769Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Map.cs",
-              "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Room\\Map.cs",
-              "RelativeDocumentMoniker": "Server\\Game\\Room\\Map.cs",
-              "ToolTip": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Room\\Map.cs",
-              "RelativeToolTip": "Server\\Game\\Room\\Map.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGoAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T05:41:08.429Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "DataManager.cs",
               "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Data\\DataManager.cs",
               "RelativeDocumentMoniker": "Server\\Data\\DataManager.cs",
@@ -298,25 +360,23 @@
               "RelativeToolTip": "Server\\Data\\DataManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T02:07:13.067Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-12T02:07:13.067Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ClientSession.cs",
-              "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Session\\ClientSession.cs",
-              "RelativeDocumentMoniker": "Server\\Session\\ClientSession.cs",
-              "ToolTip": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Session\\ClientSession.cs",
-              "RelativeToolTip": "Server\\Session\\ClientSession.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAywCMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-13T04:01:37.33Z",
-              "EditorCaption": ""
+              "DocumentIndex": 18,
+              "Title": "config.json",
+              "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\bin\\Debug\\net8.0\\config.json",
+              "RelativeDocumentMoniker": "Server\\bin\\Debug\\net8.0\\config.json",
+              "ToolTip": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\bin\\Debug\\net8.0\\config.json",
+              "RelativeToolTip": "Server\\bin\\Debug\\net8.0\\config.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-12T02:16:17.481Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "ObjectManager.cs",
               "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Game\\Object\\ObjectManager.cs",
               "RelativeDocumentMoniker": "Server\\Game\\Object\\ObjectManager.cs",
@@ -324,12 +384,11 @@
               "RelativeToolTip": "Server\\Game\\Object\\ObjectManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T01:18:45.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-08T01:18:45.154Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "SkillData.json",
               "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Client\\Assets\\Resources\\Data\\SkillData.json",
               "RelativeDocumentMoniker": "..\\MMOGame_Client\\Assets\\Resources\\Data\\SkillData.json",
@@ -338,18 +397,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-07-12T02:32:30.587Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "PacketHandler.cs",
-              "DocumentMoniker": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Packet\\PacketHandler.cs",
-              "RelativeDocumentMoniker": "Server\\Packet\\PacketHandler.cs",
-              "ToolTip": "E:\\Programming\\MMOGame\\MMOGame_Server\\Server\\Packet\\PacketHandler.cs",
-              "RelativeToolTip": "Server\\Packet\\PacketHandler.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAAABEAAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T08:30:18.719Z"
             }
           ]
         }

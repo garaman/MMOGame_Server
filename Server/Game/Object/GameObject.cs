@@ -122,6 +122,8 @@ namespace Server.Game.Object
 
         public virtual void OnDead(GameObject attacker)
         {
+            if (Room == null) { return; }
+
             S_Die diePacket = new S_Die();
             diePacket.ObjectId = Id;
             diePacket.AttackerId = attacker.Id;
@@ -129,6 +131,7 @@ namespace Server.Game.Object
 
             GameRoom room = Room;
             room.LeaveGame(Id);
+
             Stat.Hp = Stat.MaxHp;
             PosInfo.State = CreatureState.Idle;
             PosInfo.MoveDir = MoveDir.Down;

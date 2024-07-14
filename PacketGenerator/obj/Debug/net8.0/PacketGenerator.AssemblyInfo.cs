@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PacketGenerator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da8bc9e7c6e12eda8365a77e37a69e0529036583")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4945071ab3d21c7f1fa8cd0e54db70f1d6df2a71")]
 [assembly: System.Reflection.AssemblyProductAttribute("PacketGenerator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PacketGenerator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
