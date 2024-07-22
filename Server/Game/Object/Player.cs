@@ -21,7 +21,7 @@ namespace Server.Game.Object
 
         public override void OnDamaged(GameObject attacker, int damage)
         {
-            Console.WriteLine($"Attacker : {attacker.Info.Name} /Damage : {damage}");
+            //Console.WriteLine($"Attacker : {attacker.Info.Name} /Damage : {damage}");
             base.OnDamaged(attacker, damage);
         }
 

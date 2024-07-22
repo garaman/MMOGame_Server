@@ -1,3 +1,4 @@
 {
-  "dataPath": "../../../../../MMOGame_Client/Assets/Resources/Data"
+  "dataPath": "../../../../../MMOGame_Client/Assets/Resources/Data",
+  "connectionString": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=GameDB;"
 }

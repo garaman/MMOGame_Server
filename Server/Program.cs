@@ -10,6 +10,7 @@ using Google.Protobuf;
 using Google.Protobuf.Protocol;
 using Google.Protobuf.WellKnownTypes;
 using Server.Data;
+using Server.DB;
 using Server.Game.Job;
 using Server.Game.Room;
 using ServerCore;
@@ -36,7 +37,7 @@ namespace Server
         {
             ConfigManager.LoadConfig();
             DataManager.LoadData();
-
+                        
             GameRoom room = RoomManager.Instance.Add(1);
             TickRoom(room, 50);
 

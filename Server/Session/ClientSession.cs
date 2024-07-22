@@ -14,10 +14,12 @@ using Server.Data;
 
 namespace Server
 {
-    public class ClientSession : PacketSession
+    public partial class ClientSession : PacketSession
     {
         public Player MyPlayer {  get; set; } 
         public int SessionId { get; set; }
+
+        public PlayerServerState ServerState { get; private set; } = PlayerServerState.ServerStateLogin;
 
         public void Send(IMessage packet)
         {
@@ -36,24 +38,13 @@ namespace Server
         {
             Console.WriteLine($"OnConnected : {endPoint}");
 
-            // PROTO Test
-            MyPlayer = ObjectManager.Instance.Add<Player>();
             {
-                MyPlayer.Info.Name = $"Player_{MyPlayer.Info.ObjectId}";
-                MyPlayer.Info.PosInfo.State = CreatureState.Idle;
-                MyPlayer.Info.PosInfo.MoveDir = MoveDir.Down;
-                MyPlayer.Info.PosInfo.PosX = 0;
-                MyPlayer.Info.PosInfo.PosY = 0;
-
-                StatInfo stat = null;
-                DataManager.StatDict.TryGetValue(1, out stat);
-                MyPlayer.Stat.MergeFrom(stat);
-
-                MyPlayer.Session = this;
+                S_Connected coonectedPacket = new S_Connected();
+                Send(coonectedPacket);
             }
 
-            GameRoom room = RoomManager.Instance.Find(1);
-            room.Push(room.EnterGame,MyPlayer);
+
+           
         }
 
         public override void OnRecvPacket(ArraySegment<byte> buffer)

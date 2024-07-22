@@ -66,8 +66,8 @@ namespace Server.Game.Room
         public int SizeX { get { return MaxX - MinX; } }
         public int SizeY { get { return MaxY - MinY; } }
 
-        bool[,] _collision;
-        GameObject[,] _objects;
+        bool[,]? _collision;
+        GameObject[,]? _objects;
 
         public bool CanGo(Vector2Int cellPos, bool checkObjects = true)
         {
