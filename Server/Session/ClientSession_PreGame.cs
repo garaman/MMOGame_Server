@@ -14,6 +14,8 @@ using Server.Data;
 using Server.DB;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
+using Server.Utils;
+using Server.Game.Item;
 
 namespace Server
 {
@@ -44,9 +46,10 @@ namespace Server
                     {
                         LobbyPlayerInfo lobbyPlayer = new LobbyPlayerInfo()
                         {
+                            PlayerDbId = playerDb.PlayerDbId,
                             Name = playerDb.PlayerName,
                             StatInfo = new StatInfo()
-                            { 
+                            {                                
                                 Level = playerDb.Level,
                                 Hp = playerDb.Hp,
                                 MaxHp = playerDb.MaxHp,
@@ -71,7 +74,9 @@ namespace Server
                 {
                     AccountDb newAccount = new AccountDb() { AccountName = loginPacket.UniqueId };
                     db.Accounts.Add(newAccount);
-                    db.SaveChanges();
+                    bool success = db.SaveChangesEx();
+                    if (success == false) { return; }
+                    
 
                     // AccountDbId 메모리에 기억.
                     AccountDbId = newAccount.AccountDbId;
@@ -94,6 +99,7 @@ namespace Server
             // TODO : 로비에서 선택시 
             MyPlayer = ObjectManager.Instance.Add<Player>();
             {
+                MyPlayer.PlayerDbId = playerInfo.PlayerDbId;
                 MyPlayer.Info.Name = playerInfo.Name;
                 MyPlayer.Info.PosInfo.State = CreatureState.Idle;
                 MyPlayer.Info.PosInfo.MoveDir = MoveDir.Down;
@@ -101,6 +107,31 @@ namespace Server
                 MyPlayer.Info.PosInfo.PosY = 0;
                 MyPlayer.Stat.MergeFrom(playerInfo.StatInfo);
                 MyPlayer.Session = this;
+
+                S_ItemList itemListPacket = new S_ItemList();
+
+                using (AppDbContext db = new AppDbContext())
+                {
+                    List<ItemDb> items = db.Items
+                        .Where(i => i.OwnerDbId == playerInfo.PlayerDbId)
+                        .ToList();
+
+                    foreach (ItemDb itemDb in items)
+                    {
+                        Item item = Item.MakeItem(itemDb);
+                        
+                        // 인벤토리에 아이템 저장.
+                        if (item != null)
+                        {
+                            MyPlayer.Inven.Add(item);
+                            ItemInfo info = new ItemInfo();
+                            info.MergeFrom(item.Info);
+                            itemListPacket.Items.Add(info);
+                        }
+                    }
+                }
+
+                Send(itemListPacket);
             }
 
             ServerState = PlayerServerState.ServerStateGame;
@@ -143,11 +174,13 @@ namespace Server
                     };
 
                     db.Players.Add(newplayerDb);
-                    db.SaveChanges();
+                    bool success = db.SaveChangesEx();
+                    if (success == false) { return; }
 
                     // 메모리 추가.
                     LobbyPlayerInfo lobbyPlayer = new LobbyPlayerInfo()
                     {
+                        PlayerDbId = newplayerDb.PlayerDbId,
                         Name = createPacket.Name,
                         StatInfo = new StatInfo()
                         {
