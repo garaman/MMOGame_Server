@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\OneDrive\\바탕 화면\\Project\\MMOGame\\MMOGame_Server\\ServerCore\\ServerCore.csproj": {}
+    "C:\\Project\\MMOGame\\MMOGame_Server\\ServerCore\\ServerCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\OneDrive\\바탕 화면\\Project\\MMOGame\\MMOGame_Server\\ServerCore\\ServerCore.csproj": {
+    "C:\\Project\\MMOGame\\MMOGame_Server\\ServerCore\\ServerCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\OneDrive\\바탕 화면\\Project\\MMOGame\\MMOGame_Server\\ServerCore\\ServerCore.csproj",
+        "projectUniqueName": "C:\\Project\\MMOGame\\MMOGame_Server\\ServerCore\\ServerCore.csproj",
         "projectName": "ServerCore",
-        "projectPath": "C:\\Users\\user\\OneDrive\\바탕 화면\\Project\\MMOGame\\MMOGame_Server\\ServerCore\\ServerCore.csproj",
+        "projectPath": "C:\\Project\\MMOGame\\MMOGame_Server\\ServerCore\\ServerCore.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\OneDrive\\바탕 화면\\Project\\MMOGame\\MMOGame_Server\\ServerCore\\obj\\",
+        "outputPath": "C:\\Project\\MMOGame\\MMOGame_Server\\ServerCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -84,6 +84,7 @@ namespace Server.Data
         public int id;
         public string name;
         public ItemType itemType;
+        public string iconPath;
     }
 
     public class  WeaponData : ItemData

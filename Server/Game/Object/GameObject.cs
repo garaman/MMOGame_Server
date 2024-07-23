@@ -113,7 +113,7 @@ namespace Server.Game.Object
             chagePacket.ObjectId = Id;
             chagePacket.Hp = Stat.Hp;
             Room.Broadcast(chagePacket);
-
+            Console.WriteLine($"PlayerHp : {Stat.Hp}");
             if (Stat.Hp <= 0)
             {                
                 OnDead(attacker);

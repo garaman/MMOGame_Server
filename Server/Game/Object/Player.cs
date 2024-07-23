@@ -22,14 +22,13 @@ namespace Server.Game.Object
         {
             ObjectType = GameObjectType.Player;
             Speed = 10.0f;
-        
+            if(Hp < 0) { Hp = 1; }
+
         }
 
         public override void OnDamaged(GameObject attacker, int damage)
         {
-            base.OnDamaged(attacker, damage);
-
-            
+            base.OnDamaged(attacker, damage);          
             
         }
 
@@ -40,7 +39,7 @@ namespace Server.Game.Object
 
         public void OnLeavGame()
         {
-            DbTransaction.SavePlayerStatus_AllinOne(this, Room);
+            DbTransaction.SavePalyerStatus(this, Room);
         }
     }
 }

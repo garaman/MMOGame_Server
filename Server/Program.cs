@@ -43,7 +43,7 @@ namespace Server
             {
                 using (AppDbContext db = new AppDbContext())
                 {
-                    PlayerDb player = db.Players.FirstOrDefault();
+                    PlayerDb? player = db.Players.FirstOrDefault();
                     if (player != null)
                     {
                         db.Items.Add(new ItemDb() 
