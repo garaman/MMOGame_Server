@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Server.Game.Item
+namespace Server.Game
 {
     public class Inventory
     {
@@ -32,6 +32,17 @@ namespace Server.Game.Item
                 }
             }
 
+            return null;
+        }
+
+        public int? GetEmptySlot()
+        {
+            for(int slot =  0; slot < 24; slot++)
+            {
+                Item? item = _items.Values.FirstOrDefault(i=>i.Slot == slot);
+                if (item == null)
+                    return slot;
+            }
             return null;
         }
     }

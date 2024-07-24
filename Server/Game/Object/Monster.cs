@@ -1,5 +1,6 @@
 ﻿using Google.Protobuf.Protocol;
 using Server.Data;
+using Server.DB;
 using Server.Game.Room;
 using System;
 using System.Collections.Generic;
@@ -12,18 +13,24 @@ namespace Server.Game.Object
 {
     public class Monster : GameObject
     {
+        public int TemplateId { get; private set; }
         public Monster() 
         {
             ObjectType = GameObjectType.Monster;
+        }
 
-            // 임시
-            Stat.Level = 1;
-            Stat.Hp = 100;
-            Stat.MaxHp = 100;
-            Stat.Speed = 4.0f;
+        public void init(int templateId)
+        {
+            TemplateId = templateId;
+
+            MonsterData monsterData = null;
+            DataManager.MonsterDict.TryGetValue(TemplateId, out monsterData);
+            Stat.MergeFrom(monsterData.stat);
+            Stat.Hp = monsterData.stat.MaxHp;            
 
             State = CreatureState.Idle;
         }
+            
 
         // FSM(Finite State Machine)
         public override void Update()
@@ -187,6 +194,45 @@ namespace Server.Game.Object
 
         protected virtual void UpdateDead()
         {
+        }
+
+        public override void OnDead(GameObject attacker)
+        {
+            base.OnDead(attacker);
+
+            // TODO: 아이템 생성.
+            GameObject owner = attacker.GetOwner();
+
+            if (owner.ObjectType == GameObjectType.Player)
+            {
+                RewardData rewardData = GetRandomReward();
+                if (rewardData != null)
+                {
+                    Player player = (Player)owner;
+                    DbTransaction.RewardPlayer(player, rewardData, Room);
+                }
+            }
+
+        }
+
+        RewardData GetRandomReward()
+        {
+            MonsterData monsterData = null;
+            DataManager.MonsterDict.TryGetValue(TemplateId, out monsterData);
+
+            int rand = new Random().Next(0, 101);
+
+            int sum = 0;
+            foreach (RewardData rewardData in monsterData.rewards)
+            {
+                sum += rewardData.probability;
+                if(rand <= sum) 
+                { 
+                    return rewardData;
+                }
+            }
+
+            return null;
         }
     }
 }

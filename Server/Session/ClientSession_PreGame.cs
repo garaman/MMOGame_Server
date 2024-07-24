@@ -15,7 +15,7 @@ using Server.DB;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
 using Server.Utils;
-using Server.Game.Item;
+using Server.Game;
 
 namespace Server
 {

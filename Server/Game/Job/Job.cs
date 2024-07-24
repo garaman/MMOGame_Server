@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Server.Game.Job
+namespace Server.Game
 {
     public interface IJob
     {

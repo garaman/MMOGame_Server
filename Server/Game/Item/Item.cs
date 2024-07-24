@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Server.Game.Item
+namespace Server.Game
 {
     public class Item
     {
@@ -35,7 +35,11 @@ namespace Server.Game.Item
             get { return Info.Slot; }
             set { Info.Slot = value; }
         }
-
+        public bool Equipped
+        {
+            get { return Info.Equipped; }
+            set { Info.Equipped = value; }
+        }
         public ItemType ItemType { get; private set; }
         public bool Stackable { get; protected set; }
 
@@ -73,6 +77,7 @@ namespace Server.Game.Item
                 item.ItemDbId = itemDb.ItemDbId;
                 item.Count = itemDb.Count;
                 item.Slot = itemDb.Slot;
+                item.Equipped = itemDb.Equipped;
             }
 
             return item;

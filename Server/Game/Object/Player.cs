@@ -1,7 +1,7 @@
 ﻿using Google.Protobuf.Protocol;
 using Microsoft.EntityFrameworkCore;
 using Server.DB;
-using Server.Game.Item;
+using Server.Game;
 using Server.Game.Room;
 using Server.Utils;
 using System;
