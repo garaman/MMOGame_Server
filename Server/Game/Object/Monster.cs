@@ -142,7 +142,7 @@ namespace Server.Game.Object
             if (_coolTick == 0)
             {
                 // 유효한 타겟인지 확인
-                if (_target == null || _target.Room != Room || _target.Hp == 0)
+                if (_target == null || _target.Room != Room || _target.Hp < 0)
                 {
                     _target = null;
                     State = CreatureState.Moving;
@@ -173,7 +173,7 @@ namespace Server.Game.Object
                 DataManager.SkillDict.TryGetValue(1, out skillData);
 
                 // 데미지 판정
-                _target.OnDamaged(this, skillData.damage + Stat.Attack);
+                _target.OnDamaged(this, skillData.damage + TotalAttack);
 
                 // 스킬 사용 BroadCast
                 S_Skill skill = new S_Skill() { Info = new SkillInfo() };

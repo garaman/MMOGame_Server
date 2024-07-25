@@ -39,10 +39,6 @@ namespace Server.Game.Room
             {
                 m.Update();
             }
-            foreach (Projectile p in _projectiles.Values)
-            {
-                p.Update();
-            }
 
             Flush();
         }
@@ -57,6 +53,8 @@ namespace Server.Game.Room
                 Player player = gameObject as Player;
                 _players.Add(gameObject.Id, player);
                 player.Room = this;
+                player.RefreshAddionalStat();
+
                 Map.ApplyMove(player, new Vector2Int(player.CellPos.x, player.CellPos.y));
                 // 본인한테 정보 전송
                 {
@@ -97,6 +95,8 @@ namespace Server.Game.Room
                 Projectile projectile = gameObject as Projectile;
                 _projectiles.Add(gameObject.Id, projectile);
                 projectile.Room = this;
+
+                projectile.Update();
             }
 
             // 타인한테 정보 전송

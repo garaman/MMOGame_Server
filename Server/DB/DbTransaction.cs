@@ -17,7 +17,8 @@ namespace Server.DB
     public partial class DbTransaction : JobSerializer
     {
         public static DbTransaction Instance { get; } = new DbTransaction();
-
+        
+        /*
         public static void SavePlayerStatus_AllinOne(Player player, GameRoom room)
         {
             if (player == null || room == null) {  return; }
@@ -40,7 +41,7 @@ namespace Server.DB
                 }
             }); 
         }
-
+        */
         public static void SavePalyerStatus(Player player, GameRoom room)
         {
             if (player == null || room == null) { return; }

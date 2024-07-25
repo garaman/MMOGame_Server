@@ -18,19 +18,8 @@ namespace Server.Game.Room
         public void HandleEquipItem(Player player, C_EquipItem equipPacket)
         {
             if (player == null) { return; }
-
-            Item item = player.Inven.Get(equipPacket.ItemDbId);
-            if(item == null) { return; }
-
-            // DB연동
-            item.Equipped = equipPacket.Equipped;
-
-            DbTransaction.EquipItemNoti(player, item);
-
-            S_EquipItem equipOkItem = new S_EquipItem();
-            equipOkItem.ItemDbId = equipPacket.ItemDbId;
-            equipOkItem.Equipped = equipPacket.Equipped;
-            player.Session.Send(equipOkItem);
+                       
+            player.HandleEquipItem(equipPacket);
         }
         
     }

@@ -11,17 +11,15 @@ namespace Server.Game.Object
     public class Arrow : Projectile
     {
         public GameObject Owner {  get; set; }
-
-        long _nextMoveTick = 0;
+                
 
         public override void Update()
         {            
             if (Data == null || Data.projectileInfo == null || Owner == null || Room == null) { return; }  
-
-            if(_nextMoveTick >= Environment.TickCount64) { return; }
-
-            long tick = (long)(1000 / Data.projectileInfo.speed);
-            _nextMoveTick = Environment.TickCount64 + tick;
+            
+            int tick = (int)(1000 / Data.projectileInfo.speed);
+            Room.PushAfter(tick, Update);
+            
 
             Vector2Int destPos = GetFrontCellPos();
             if (Room.Map.CanGo(destPos))
@@ -40,7 +38,7 @@ namespace Server.Game.Object
                 GameObject target = Room.Map.Find(destPos);
                 if (target != null)
                 {
-                    target.OnDamaged(this, Data.damage + Owner.Stat.Attack);                
+                    target.OnDamaged(this, Data.damage + Owner.TotalAttack);                
                 }
                 
                 Room.Push(Room.LeaveGame,Id);
