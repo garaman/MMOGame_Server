@@ -117,7 +117,7 @@ namespace Server.Game.Object
             S_ChangeHp chagePacket = new S_ChangeHp();
             chagePacket.ObjectId = Id;
             chagePacket.Hp = Stat.Hp;
-            Room.Broadcast(chagePacket);
+            Room.Broadcast(CellPos, chagePacket);
             Console.WriteLine($"PlayerHp : {Stat.Hp}");
             if (Stat.Hp <= 0)
             {                
@@ -132,7 +132,7 @@ namespace Server.Game.Object
             S_Die diePacket = new S_Die();
             diePacket.ObjectId = Id;
             diePacket.AttackerId = attacker.Id;
-            Room.Broadcast(diePacket);
+            Room.Broadcast(CellPos, diePacket);
 
             GameRoom room = Room;
             room.LeaveGame(Id);
@@ -143,7 +143,7 @@ namespace Server.Game.Object
             PosInfo.PosX = 0;
             PosInfo.PosY = 0;
 
-            room.EnterGame(this);
+            room.EnterGame(this, randomPos: true);
         }
 
         public virtual GameObject GetOwner()

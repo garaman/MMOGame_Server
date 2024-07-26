@@ -16,7 +16,7 @@ namespace Server.Game.Object
         public int TemplateId { get; private set; }
         public Monster() 
         {
-            ObjectType = GameObjectType.Monster;
+            ObjectType = GameObjectType.Monster;           
         }
 
         public void init(int templateId)
@@ -25,13 +25,14 @@ namespace Server.Game.Object
 
             MonsterData monsterData = null;
             DataManager.MonsterDict.TryGetValue(TemplateId, out monsterData);
+            Info.Name = monsterData.name;
             Stat.MergeFrom(monsterData.stat);
             Stat.Hp = monsterData.stat.MaxHp;            
 
             State = CreatureState.Idle;
         }
-            
 
+        IJob _job;
         // FSM(Finite State Machine)
         public override void Update()
         {
@@ -49,6 +50,12 @@ namespace Server.Game.Object
                 case CreatureState.Dead:
                     UpdateDead();
                     break;
+            }
+
+            // 5프레임
+            if (Room != null)
+            {
+                _job = Room.PushAfter(200, Update);
             }
         }
 
@@ -133,7 +140,7 @@ namespace Server.Game.Object
             S_Move movePacket = new S_Move();
             movePacket.ObjectId = Id;
             movePacket.PosInfo = PosInfo;
-            Room.Broadcast(movePacket);
+            Room.Broadcast(CellPos, movePacket);
         }
 
         long _coolTick = 0;
@@ -179,7 +186,7 @@ namespace Server.Game.Object
                 S_Skill skill = new S_Skill() { Info = new SkillInfo() };
                 skill.ObjectId = Id;
                 skill.Info.SkillId = skillData.id;
-                Room.Broadcast(skill);
+                Room.Broadcast(CellPos, skill);
 
                 // 스킬 쿨타임 적용
                 int coolTick = (int)(1000 * skillData.cooldown);
@@ -198,6 +205,12 @@ namespace Server.Game.Object
 
         public override void OnDead(GameObject attacker)
         {
+            if (_job != null)
+            {
+                _job.Cancel = true;
+                _job = null;
+            }
+
             base.OnDead(attacker);
 
             // TODO: 아이템 생성.
@@ -212,7 +225,6 @@ namespace Server.Game.Object
                     DbTransaction.RewardPlayer(player, rewardData, Room);
                 }
             }
-
         }
 
         RewardData GetRandomReward()

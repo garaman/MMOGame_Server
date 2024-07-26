@@ -22,14 +22,12 @@ namespace Server.Game.Object
             
 
             Vector2Int destPos = GetFrontCellPos();
-            if (Room.Map.CanGo(destPos))
-            {
-                CellPos = destPos;
-
+            if (Room.Map.ApplyMove(this, destPos, collision: false))
+            {                
                 S_Move movePacket = new S_Move();
                 movePacket.ObjectId = Id;
                 movePacket.PosInfo = PosInfo;
-                Room.Broadcast(movePacket);
+                Room.Broadcast(CellPos, movePacket);
 
                 //Console.WriteLine("Move Arrow");
             }

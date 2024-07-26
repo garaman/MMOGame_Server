@@ -17,6 +17,7 @@ namespace Server.Game.Object
     {
         public int PlayerDbId {  get; set; }
         public ClientSession Session { get; set; }
+        public VisionCube Vision {  get; set; }
         public Inventory Inven { get; private set; } = new Inventory();
 
         public int WeaponDamage { get; private set; }
@@ -28,8 +29,9 @@ namespace Server.Game.Object
         public Player() 
         {
             ObjectType = GameObjectType.Player;
-            Speed = 10.0f;
-            if(Hp < 0) { Hp = 1; }
+            Vision = new VisionCube(this);
+
+            if(Hp <= 0) { Hp = 1; }
         }
 
         public override void OnDamaged(GameObject attacker, int damage)

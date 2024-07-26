@@ -36,7 +36,7 @@ namespace Server.Game.Room
             resMovePacket.ObjectId = player.Info.ObjectId;
             resMovePacket.PosInfo = player.Info.PosInfo;
 
-            Broadcast(resMovePacket);
+            Broadcast(player.CellPos, resMovePacket);
             
         }
         public void HandleSkill(Player player, C_Skill skillPacket)
@@ -53,7 +53,7 @@ namespace Server.Game.Room
             skill.ObjectId = info.ObjectId;
             skill.Info.SkillId = skillPacket.Info.SkillId;
 
-            Broadcast(skill);
+            Broadcast(player.CellPos, skill);
 
             Data.Skill skillData = null;
             if(DataManager.SkillDict.TryGetValue(skillPacket.Info.SkillId, out skillData) == false) { return; }   
@@ -85,7 +85,7 @@ namespace Server.Game.Room
                         arrow.PosInfo.PosY = player.PosInfo.PosY;
                         arrow.Speed = skillData.projectileInfo.speed;
 
-                        Push(EnterGame,arrow);
+                        Push(EnterGame,arrow, false);
                     }
                     break;
             }
