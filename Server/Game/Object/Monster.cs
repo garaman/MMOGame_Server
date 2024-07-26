@@ -25,7 +25,7 @@ namespace Server.Game.Object
 
             MonsterData monsterData = null;
             DataManager.MonsterDict.TryGetValue(TemplateId, out monsterData);
-            Info.Name = monsterData.name;
+            Info.Name = $"{monsterData.name}_{Info.ObjectId}";
             Stat.MergeFrom(monsterData.stat);
             Stat.Hp = monsterData.stat.MaxHp;            
 
@@ -109,7 +109,7 @@ namespace Server.Game.Object
                 return;
             }
 
-            List<Vector2Int> path = Room.Map.FindPath(CellPos, _target.CellPos, checkObjects: false);
+            List<Vector2Int> path = Room.Map.FindPath(CellPos, _target.CellPos, checkObjects: true);
             if (path.Count < 2 || path.Count > _chaseCellDist)
             {
                 _target = null;

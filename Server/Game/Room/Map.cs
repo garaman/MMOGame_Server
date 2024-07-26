@@ -247,7 +247,7 @@ namespace Server.Game.Room
         int[] _deltaX = new int[] { 0, 0, -1, 1 };
         int[] _cost = new int[] { 10, 10, 10, 10 };
 
-        public List<Vector2Int> FindPath(Vector2Int startCellPos, Vector2Int destCellPos, bool checkObjects = true)
+        public List<Vector2Int> FindPath(Vector2Int startCellPos, Vector2Int destCellPos, bool checkObjects = true, int maxDist = 10)
         {
             List<Pos> path = new List<Pos>();
 
@@ -286,32 +286,32 @@ namespace Server.Game.Room
                 PQNode pqnode = pq.Pop();
                 Pos node = new Pos(pqnode.Y, pqnode.X);
                 // 동일한 좌표를 여러 경로로 찾아서, 더 빠른 경로로 인해서 이미 방문(closed)된 경우 스킵
-                if (closeList.Contains(node))
-                    continue;
+                if (closeList.Contains(node)) { continue; }                
 
                 // 방문한다                
                 closeList.Add(node);
 
                 // 목적지 도착했으면 바로 종료
-                if (node.Y == dest.Y && node.X == dest.X)
-                    break;
+                if (node.Y == dest.Y && node.X == dest.X) { break; }                    
 
                 // 상하좌우 등 이동할 수 있는 좌표인지 확인해서 예약(open)한다
                 for (int i = 0; i < _deltaY.Length; i++)
                 {
                     Pos next = new Pos(node.Y + _deltaY[i], node.X + _deltaX[i]);
 
+                    // 너무 멀면 스킵
+                    if(Math.Abs(pos.Y - next.Y) + Math.Abs(pos.X - next.X) > maxDist) { continue; }
+
+
                     // 유효 범위를 벗어났으면 스킵
                     // 벽으로 막혀서 갈 수 없으면 스킵
                     if (next.Y != dest.Y || next.X != dest.X)
                     {
-                        if (CanGo(Pos2Cell(next), checkObjects) == false) // CellPos
-                            continue;
+                        if (CanGo(Pos2Cell(next), checkObjects) == false) { continue; } // CellPos                        
                     }
 
                     // 이미 방문한 곳이면 스킵
-                    if (closeList.Contains(next))
-                        continue;
+                    if (closeList.Contains(next)) { continue; }                    
 
                     // 비용 계산
                     int g = pqnode.G + _cost[i];
@@ -346,14 +346,34 @@ namespace Server.Game.Room
         {
             List<Vector2Int> cells = new List<Vector2Int>();
 
-            Pos pos = dest;
-            while (parent[pos] != pos)
+            if(parent.ContainsKey(dest) == false)
             {
-                cells.Add(Pos2Cell(pos));
-                pos = parent[pos];
+                Pos best = new Pos();
+                int bestDist = Int32.MaxValue;
+
+                foreach (Pos pos in parent.Keys)
+                {
+                    int dist = Math.Abs(dest.X - pos.X) + Math.Abs(dest.Y - pos.Y);
+                    if (dist < bestDist)
+                    {
+                        best = pos;
+                        bestDist = dist;
+                    }
+                }
+                dest = best;                
             }
-            cells.Add(Pos2Cell(pos));
-            cells.Reverse();
+
+            {
+                Pos pos = dest;
+                while (parent[pos] != pos)
+                {
+                    cells.Add(Pos2Cell(pos));
+                    pos = parent[pos];
+                }
+                cells.Add(Pos2Cell(pos));
+                cells.Reverse();
+            }
+            
 
             return cells;
         }

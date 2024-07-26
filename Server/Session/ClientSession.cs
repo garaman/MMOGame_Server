@@ -23,6 +23,33 @@ namespace Server
         public PlayerServerState ServerState { get; private set; } = PlayerServerState.ServerStateLogin;
 
         List<ArraySegment<byte>> _reserveQueue = new List<ArraySegment<byte>>();
+
+        long _pingpongTick = 0;
+        public void Ping()
+        {
+            if(_pingpongTick > 0)
+            {
+                long delta = (System.Environment.TickCount - _pingpongTick);
+                if(delta > 30 * 1000)
+                {
+                    Console.WriteLine("Disconnected by PingCheck");
+                    Disconnect();
+                    return;
+                }
+            }
+
+            S_Ping pingPacket = new S_Ping();
+            Send(pingPacket);
+
+            GameLogic.Instance.PushAfter(5000, Ping);
+        }
+
+        public void HandlePong()
+        {
+            _pingpongTick = System.Environment.TickCount;
+        }
+
+        #region NetWork
         public void Send(IMessage packet)
         {
             string msgName = packet.Descriptor.Name.Replace("_", string.Empty);
@@ -61,6 +88,8 @@ namespace Server
                 S_Connected coonectedPacket = new S_Connected();
                 Send(coonectedPacket);
             }
+
+            GameLogic.Instance.PushAfter(5000, Ping);
         }
 
         public override void OnRecvPacket(ArraySegment<byte> buffer)
@@ -85,5 +114,6 @@ namespace Server
         {
             //Console.WriteLine($"Transferred bytes: {numOfBytes}");
         }
+        #endregion
     }
 }

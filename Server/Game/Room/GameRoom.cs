@@ -57,10 +57,13 @@ namespace Server.Game.Room
             }
             
             // 임시
-            Monster monster = ObjectManager.Instance.Add<Monster>();            
-            monster.init(1);
-            monster.CellPos = new Vector2Int(5, 5);
-            this.EnterGame(monster, randomPos: true);
+            for(int i = 0; i < 50; i++)
+            {
+                Monster monster = ObjectManager.Instance.Add<Monster>();
+                monster.init(1);
+                monster.CellPos = new Vector2Int(5, 5);
+                this.EnterGame(monster, randomPos: true);
+            }            
         }
 
         public void Update()
@@ -78,8 +81,8 @@ namespace Server.Game.Room
                 Vector2Int respawnPos;
                 while (true)
                 {
-                    respawnPos.x = _rand.Next(Map.MinX, Map.MaxX + 1);
-                    respawnPos.y = _rand.Next(Map.MinY, Map.MaxY + 1);
+                    respawnPos.x = _rand.Next(Map.MinX, Map.MaxX);
+                    respawnPos.y = _rand.Next(Map.MinY, Map.MaxY);
 
                     if (Map.Find(respawnPos) == null)
                     {
