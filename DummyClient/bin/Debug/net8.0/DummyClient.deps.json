@@ -1,0 +1,52 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "DummyClient/1.0.0": {
+        "dependencies": {
+          "Google.Protobuf": "3.27.2",
+          "ServerCore": "1.0.0"
+        },
+        "runtime": {
+          "DummyClient.dll": {}
+        }
+      },
+      "Google.Protobuf/3.27.2": {
+        "runtime": {
+          "lib/net5.0/Google.Protobuf.dll": {
+            "assemblyVersion": "3.27.2.0",
+            "fileVersion": "3.27.2.0"
+          }
+        }
+      },
+      "ServerCore/1.0.0": {
+        "runtime": {
+          "ServerCore.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DummyClient/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Google.Protobuf/3.27.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0wdgA3LO9mBS477jieBFs4pU1sWhVtwv/P+i9nAEiFDQyUA7PPHDBbJL1CeqYtV18jLiq9og4n7wSVCO171OBg==",
+      "path": "google.protobuf/3.27.2",
+      "hashPath": "google.protobuf.3.27.2.nupkg.sha512"
+    },
+    "ServerCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

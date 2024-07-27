@@ -79,6 +79,5 @@ class PacketHandler
     {        
         ClientSession clientSession = session as ClientSession;
         clientSession.HandlePong();
-       
     }
 }

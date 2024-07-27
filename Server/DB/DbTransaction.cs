@@ -68,7 +68,7 @@ namespace Server.DB
 
         public static void SaveResultFromDb(int hp)
         {
-            Console.WriteLine($"SavePlayerHp : {hp}");
+            //Console.WriteLine($"SavePlayerHp : {hp}");
         }
 
 

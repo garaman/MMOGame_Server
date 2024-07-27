@@ -26,6 +26,10 @@ namespace ServerCore
                 args.UserToken = socket;
 
                 RegisterConnect(args);
+
+                // 임시 테스트용
+                Thread.Sleep(10);
+
             }
         }
 
@@ -34,24 +38,38 @@ namespace ServerCore
             Socket socket = args.UserToken as Socket;
             if(socket == null) { return; }
 
-            bool pending = socket.ConnectAsync(args);
-            if(pending == false) 
-            { 
-                OnConnectCompleted(null, args);
+            try
+            {
+                bool pending = socket.ConnectAsync(args);
+                if (pending == false)
+                {
+                    OnConnectCompleted(null, args);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
             }
         }
 
         void OnConnectCompleted(object sender, SocketAsyncEventArgs args)
         {
-            if (args.SocketError == SocketError.Success)
+            try
             {
-                Session session = _sessionFactory.Invoke();
-                session.Start(args.ConnectSocket);
-                session.OnConnected(args.RemoteEndPoint);
+                if (args.SocketError == SocketError.Success)
+                {
+                    Session session = _sessionFactory.Invoke();
+                    session.Start(args.ConnectSocket);
+                    session.OnConnected(args.RemoteEndPoint);
+                }
+                else
+                {
+                    Console.WriteLine($"OnConnectCompleted Fail! : {args.SocketError}");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                Console.WriteLine($"OnConnectCompleted Fail! : {args.SocketError}");
+                Console.WriteLine(ex.ToString());
             }
         }
     }

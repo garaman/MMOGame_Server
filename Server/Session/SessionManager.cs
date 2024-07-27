@@ -32,7 +32,7 @@ namespace Server
                 session.SessionId = sessionId;
                 _sessions.Add(sessionId, session);
 
-                Console.WriteLine($"Connected : {sessionId}");
+                Console.WriteLine($"Connencted ({_sessions.Count}) Players");
 
                 return session;
             }
@@ -53,6 +53,7 @@ namespace Server
             lock (_lock)
             {
                 _sessions.Remove(session.SessionId);
+                Console.WriteLine($"Connencted ({_sessions.Count}) Players");
             }
         }
     }

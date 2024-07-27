@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Liykr92kFWM=",
+  "success": true,
+  "projectFilePath": "E:\\Programming\\MMOGame\\MMOGame_Server\\DummyClient\\DummyClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ahs20\\.nuget\\packages\\google.protobuf\\3.27.2\\google.protobuf.3.27.2.nupkg.sha512"
+  ],
+  "logs": []
+}
