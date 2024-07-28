@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ServerCore\ServerCore.csproj" />
+    <ProjectReference Include="..\SharedDB\SharedDB.csproj" />
   </ItemGroup>
 
 </Project>

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using SharedDB;
 
 namespace AccountServer.Controllers
 {
@@ -10,10 +11,12 @@ namespace AccountServer.Controllers
     public class AccountController : ControllerBase
     {
         AppDbContext _context;
+        SharedDbContext _shared;
 
-        public AccountController(AppDbContext db)
+        public AccountController(AppDbContext context, SharedDbContext shared)
         {
-            _context = db;
+            _context = context;
+            _shared = shared;
         }
 
         [HttpPost]
@@ -62,12 +65,43 @@ namespace AccountServer.Controllers
             {
                 res.LoginOk = true;
 
-                //TODO 서버 목록?
-                res.ServerList = new List<ServerInfo>()
+                // 토큰 발급
+                DateTime expired = DateTime.UtcNow;
+                expired.AddSeconds(600);
+
+                TokenDb tokenDb = _shared.Tokens.Where(t => t.AccountDbId == account.AccountDbId).FirstOrDefault();
+                if (tokenDb != null)
                 {
-                    new ServerInfo() {Name = "바다" , Ip="127.0.0.1", CrowdeLevel = 0 },
-                    new ServerInfo() {Name = "산" , Ip="127.0.0.1", CrowdeLevel = 3 }
-                };
+                    tokenDb.Token = new Random().Next(Int32.MinValue, Int32.MaxValue);
+                    tokenDb.Expired = expired;
+                    _shared.SaveChangesEx();
+                }
+                else
+                {
+                    tokenDb = new TokenDb()
+                    { 
+                        AccountDbId = account.AccountDbId,
+                        Token = new Random().Next(Int32.MinValue, Int32.MaxValue),
+                        Expired = expired
+                    };
+                    _shared.Add(tokenDb);
+                    _shared.SaveChangesEx();
+                }
+
+                res.AccountId = account.AccountDbId;
+                res.Token = tokenDb.Token;
+                res.ServerList = new List<ServerInfo>();
+
+                foreach (ServerDb serverDb in _shared.Servers)
+                {
+                    res.ServerList.Add(new ServerInfo()
+                    {
+                        Name = serverDb.Name,
+                        IpAddress = serverDb.IpAddress,
+                        Port = serverDb.Port,
+                        BusyScore = serverDb.BusyScore
+                    });
+                }
             }
             return res;
         }

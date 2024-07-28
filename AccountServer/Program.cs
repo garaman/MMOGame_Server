@@ -1,6 +1,7 @@
 using AccountServer.DB;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using SharedDB;
 
 namespace AccountServer
 {
@@ -19,6 +20,10 @@ namespace AccountServer
             builder.Services.AddDbContext<AppDbContext>(options => 
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+            });
+            builder.Services.AddDbContext<SharedDbContext>(options =>
+            {
+                options.UseSqlServer(builder.Configuration.GetConnectionString("SharedConnection"));
             });
 
             var app = builder.Build();

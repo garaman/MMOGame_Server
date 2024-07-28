@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PacketGenerator", "PacketGe
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{DAFEFDD9-2F93-4215-90B9-2FF0343F8669}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DummyClient", "DummyClient\DummyClient.csproj", "{B62FF6B5-B540-4D39-9A47-794C2A75F889}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DummyClient", "DummyClient\DummyClient.csproj", "{B62FF6B5-B540-4D39-9A47-794C2A75F889}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountServer", "AccountServer\AccountServer.csproj", "{86D29F35-1659-4018-B4C7-3D51F325339C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountServer", "AccountServer\AccountServer.csproj", "{86D29F35-1659-4018-B4C7-3D51F325339C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedDB", "SharedDB\SharedDB.csproj", "{801C1DBF-4828-48CD-B0E2-D178F3B7B115}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{86D29F35-1659-4018-B4C7-3D51F325339C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86D29F35-1659-4018-B4C7-3D51F325339C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86D29F35-1659-4018-B4C7-3D51F325339C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{801C1DBF-4828-48CD-B0E2-D178F3B7B115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{801C1DBF-4828-48CD-B0E2-D178F3B7B115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{801C1DBF-4828-48CD-B0E2-D178F3B7B115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{801C1DBF-4828-48CD-B0E2-D178F3B7B115}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1648,6 +1648,19 @@
         "runtime": {
           "bin/placeholder/ServerCore.dll": {}
         }
+      },
+      "SharedDB/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.7"
+        },
+        "compile": {
+          "bin/placeholder/SharedDB.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SharedDB.dll": {}
+        }
       }
     }
   },
@@ -4427,6 +4440,11 @@
       "type": "project",
       "path": "../ServerCore/ServerCore.csproj",
       "msbuildProject": "../ServerCore/ServerCore.csproj"
+    },
+    "SharedDB/1.0.0": {
+      "type": "project",
+      "path": "../SharedDB/SharedDB.csproj",
+      "msbuildProject": "../SharedDB/SharedDB.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4438,6 +4456,7 @@
       "Microsoft.Extensions.Logging.Console >= 8.0.0",
       "Newtonsoft.Json >= 13.0.3",
       "ServerCore >= 1.0.0",
+      "SharedDB >= 1.0.0",
       "System.Formats.Asn1 >= 8.0.1"
     ]
   },
@@ -4476,6 +4495,9 @@
           "projectReferences": {
             "E:\\Programming\\MMOGame\\MMOGame_Server\\ServerCore\\ServerCore.csproj": {
               "projectPath": "E:\\Programming\\MMOGame\\MMOGame_Server\\ServerCore\\ServerCore.csproj"
+            },
+            "E:\\Programming\\MMOGame\\MMOGame_Server\\SharedDB\\SharedDB.csproj": {
+              "projectPath": "E:\\Programming\\MMOGame\\MMOGame_Server\\SharedDB\\SharedDB.csproj"
             }
           }
         }

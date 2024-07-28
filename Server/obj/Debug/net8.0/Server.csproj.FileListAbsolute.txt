@@ -338,3 +338,5 @@ C:\Project\MMOGame\MMOGame_Server\Server\obj\Debug\net8.0\refint\Server.dll
 C:\Project\MMOGame\MMOGame_Server\Server\obj\Debug\net8.0\Server.pdb
 C:\Project\MMOGame\MMOGame_Server\Server\obj\Debug\net8.0\Server.genruntimeconfig.cache
 C:\Project\MMOGame\MMOGame_Server\Server\obj\Debug\net8.0\ref\Server.dll
+E:\Programming\MMOGame\MMOGame_Server\Server\bin\Debug\net8.0\SharedDB.dll
+E:\Programming\MMOGame\MMOGame_Server\Server\bin\Debug\net8.0\SharedDB.pdb

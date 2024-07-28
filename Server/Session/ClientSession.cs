@@ -34,7 +34,7 @@ namespace Server
             if(_pingpongTick > 0)
             {
                 long delta = (System.Environment.TickCount - _pingpongTick);
-                if(delta > 30 * 1000)
+                if(delta > 10 * 1000)
                 {
                     Console.WriteLine("Disconnected by PingCheck");
                     Disconnect();

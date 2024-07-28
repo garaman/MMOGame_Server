@@ -1,0 +1,15 @@
+E:\Programming\MMOGame\MMOGame_Server\SharedDB\bin\Debug\net8.0\SharedDB.deps.json
+E:\Programming\MMOGame\MMOGame_Server\SharedDB\bin\Debug\net8.0\SharedDB.runtimeconfig.json
+E:\Programming\MMOGame\MMOGame_Server\SharedDB\bin\Debug\net8.0\SharedDB.dll
+E:\Programming\MMOGame\MMOGame_Server\SharedDB\bin\Debug\net8.0\SharedDB.pdb
+E:\Programming\MMOGame\MMOGame_Server\SharedDB\obj\Debug\net8.0\SharedDB.csproj.AssemblyReference.cache
+E:\Programming\MMOGame\MMOGame_Server\SharedDB\obj\Debug\net8.0\SharedDB.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programming\MMOGame\MMOGame_Server\SharedDB\obj\Debug\net8.0\SharedDB.AssemblyInfoInputs.cache
+E:\Programming\MMOGame\MMOGame_Server\SharedDB\obj\Debug\net8.0\SharedDB.AssemblyInfo.cs
+E:\Programming\MMOGame\MMOGame_Server\SharedDB\obj\Debug\net8.0\SharedDB.csproj.CoreCompileInputs.cache
+E:\Programming\MMOGame\MMOGame_Server\SharedDB\obj\Debug\net8.0\SharedDB.sourcelink.json
+E:\Programming\MMOGame\MMOGame_Server\SharedDB\obj\Debug\net8.0\SharedDB.dll
+E:\Programming\MMOGame\MMOGame_Server\SharedDB\obj\Debug\net8.0\refint\SharedDB.dll
+E:\Programming\MMOGame\MMOGame_Server\SharedDB\obj\Debug\net8.0\SharedDB.pdb
+E:\Programming\MMOGame\MMOGame_Server\SharedDB\obj\Debug\net8.0\SharedDB.genruntimeconfig.cache
+E:\Programming\MMOGame\MMOGame_Server\SharedDB\obj\Debug\net8.0\ref\SharedDB.dll

@@ -15,6 +15,7 @@
           "Microsoft.Extensions.Logging.Console": "8.0.0",
           "Newtonsoft.Json": "13.0.3",
           "ServerCore": "1.0.0",
+          "SharedDB": "1.0.0",
           "System.Formats.Asn1": "8.0.1"
         },
         "runtime": {
@@ -1024,6 +1025,14 @@
         "runtime": {
           "ServerCore.dll": {}
         }
+      },
+      "SharedDB/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.7"
+        },
+        "runtime": {
+          "SharedDB.dll": {}
+        }
       }
     }
   },
@@ -1615,6 +1624,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "ServerCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SharedDB/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

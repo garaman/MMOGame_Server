@@ -1490,6 +1490,19 @@
             "rid": "win"
           }
         }
+      },
+      "SharedDB/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.7"
+        },
+        "compile": {
+          "bin/placeholder/SharedDB.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SharedDB.dll": {}
+        }
       }
     }
   },
@@ -4058,12 +4071,18 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "SharedDB/1.0.0": {
+      "type": "project",
+      "path": "../SharedDB/SharedDB.csproj",
+      "msbuildProject": "../SharedDB/SharedDB.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.EntityFrameworkCore.Design >= 8.0.7",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.7"
+      "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.7",
+      "SharedDB >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4098,7 +4117,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\Programming\\MMOGame\\MMOGame_Server\\SharedDB\\SharedDB.csproj": {
+              "projectPath": "E:\\Programming\\MMOGame\\MMOGame_Server\\SharedDB\\SharedDB.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

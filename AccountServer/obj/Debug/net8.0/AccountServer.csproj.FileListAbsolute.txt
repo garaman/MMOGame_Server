@@ -135,3 +135,5 @@ E:\Programming\MMOGame\MMOGame_Server\AccountServer\obj\Debug\net8.0\AccountServ
 E:\Programming\MMOGame\MMOGame_Server\AccountServer\obj\Debug\net8.0\AccountServer.RazorAssemblyInfo.cs
 E:\Programming\MMOGame\MMOGame_Server\AccountServer\obj\Debug\net8.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 E:\Programming\MMOGame\MMOGame_Server\AccountServer\obj\Debug\net8.0\scopedcss\projectbundle\AccountServer.bundle.scp.css
+E:\Programming\MMOGame\MMOGame_Server\AccountServer\bin\Debug\net8.0\SharedDB.dll
+E:\Programming\MMOGame\MMOGame_Server\AccountServer\bin\Debug\net8.0\SharedDB.pdb
