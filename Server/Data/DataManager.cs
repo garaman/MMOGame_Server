@@ -18,6 +18,7 @@ namespace Server.Data
         public static Dictionary<int, Data.Skill> SkillDict { get; private set; } = new Dictionary<int, Data.Skill>();
         public static Dictionary<int, Data.ItemData> ItemDict { get; private set; } = new Dictionary<int, Data.ItemData>();
         public static Dictionary<int, Data.MonsterData> MonsterDict { get; private set; } = new Dictionary<int, Data.MonsterData>();
+        public static Dictionary<int, Data.NpcData> NpcDict { get; private set; } = new Dictionary<int, Data.NpcData>();
 
 
         public static void LoadData()
@@ -26,6 +27,7 @@ namespace Server.Data
             SkillDict = LoadJson<Data.SkillData, int, Data.Skill>("SkillData").MakeDict();
             ItemDict = LoadJson<Data.ItemLoader, int, Data.ItemData>("ItemData").MakeDict();
             MonsterDict = LoadJson<Data.MonsterLoader, int, Data.MonsterData>("MonsterData").MakeDict();
+            NpcDict = LoadJson<Data.NpcLoader, int, Data.NpcData>("NpcData").MakeDict();
         }
 
         static Loader LoadJson<Loader, Key, Value>(string path) where Loader : ILoader<Key, Value>

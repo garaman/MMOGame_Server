@@ -54,6 +54,14 @@ namespace Server.Game.Room
                     if (Math.Abs(dy) > GameRoom.VisionCells) { continue; }
                     objects.Add(projectile);
                 }
+                foreach (Npc npc in zone.Npcs)
+                {
+                    int dx = npc.CellPos.x - cellPos.x;
+                    int dy = npc.CellPos.y - cellPos.y;
+                    if (Math.Abs(dx) > GameRoom.VisionCells) { continue; }
+                    if (Math.Abs(dy) > GameRoom.VisionCells) { continue; }
+                    objects.Add(npc);
+                }
             }
             return objects;
         }

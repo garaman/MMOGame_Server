@@ -80,4 +80,19 @@ class PacketHandler
         ClientSession clientSession = session as ClientSession;
         clientSession.HandlePong();
     }
+
+    public static void C_ChangeRoomHandler(PacketSession session, IMessage packet)
+    {
+        C_ChangeRoom changePacket = packet as C_ChangeRoom;
+        ClientSession clientSession = session as ClientSession;
+
+        Player player = clientSession.MyPlayer;
+        if (player == null) { return; }
+
+        GameRoom room = player.Room;
+        if (room == null) { return; }
+
+        
+        clientSession.HandleChangeRoom(player, room, changePacket);
+    }
 }

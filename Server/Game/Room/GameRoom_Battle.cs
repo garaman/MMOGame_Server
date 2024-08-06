@@ -74,6 +74,7 @@ namespace Server.Game.Room
                 case SkillType.SkillProjectile:
                     {
                         Arrow arrow = ObjectManager.Instance.Add<Arrow>();
+                        arrow.init(2);
                         if (arrow == null) { return; }
 
                         arrow.Owner = player;

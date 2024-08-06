@@ -96,7 +96,8 @@ namespace Server
             ConfigManager.LoadConfig();
             DataManager.LoadData();
 
-            GameLogic.Instance.Push(() => { GameLogic.Instance.Add(1); });            
+            GameLogic.Instance.Push(() => { GameLogic.Instance.Add(1); });
+            GameLogic.Instance.Push(() => { GameLogic.Instance.Add(2); });
 
             // DNS (Domain Name System)
             string host = Dns.GetHostName();
@@ -110,7 +111,7 @@ namespace Server
 
             StartServerInfoTask();
 
-            // GameLogicTask
+            // dbTask
             {
                 Thread dbTask = new Thread(DbTask);
                 dbTask.Name = "DB";

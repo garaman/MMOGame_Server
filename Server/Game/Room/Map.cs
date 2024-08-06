@@ -207,6 +207,17 @@ namespace Server.Game.Room
                     after.Projectiles.Add(projectile);
                 }
             }
+            else if (type == GameObjectType.Npc)
+            {
+                Npc npc = (Npc)gameObject;
+                Zone now = gameObject.Room.GetZone(gameObject.CellPos);
+                Zone after = gameObject.Room.GetZone(dest);
+                if (now != after)
+                {
+                    now.Npcs.Remove(npc);
+                    after.Npcs.Add(npc);
+                }
+            }
 
             posInfo.PosX = dest.x;
             posInfo.PosY = dest.y;

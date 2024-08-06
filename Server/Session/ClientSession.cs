@@ -11,6 +11,7 @@ using Google.Protobuf;
 using Server.Game.Room;
 using Server.Game.Object;
 using Server.Data;
+using Server.DB;
 
 namespace Server
 {
@@ -51,6 +52,25 @@ namespace Server
         public void HandlePong()
         {
             _pingpongTick = System.Environment.TickCount;
+        }
+
+        public void HandleChangeRoom(Player player, GameRoom room, C_ChangeRoom changePacket)
+        {
+            if (ServerState != PlayerServerState.ServerStateGame) { return; }
+
+            room.LeaveGame(player.Id);
+
+            GameLogic.Instance.Push(() =>
+            {
+                GameRoom room = GameLogic.Instance.Find(changePacket.RoomId);
+                room.Push(room.EnterGame, player, true);
+
+                S_ChangeRoom s_ChangePacket = new S_ChangeRoom();
+                s_ChangePacket.RoomId = changePacket.RoomId;
+                s_ChangePacket.ChangeState = true;
+
+                Send(s_ChangePacket);
+            });
         }
 
         #region NetWork

@@ -12,16 +12,15 @@ using System.Threading.Tasks;
 namespace Server.Game.Object
 {
     public class Monster : GameObject
-    {
-        public int TemplateId { get; private set; }
+    {        
         public Monster() 
         {
             ObjectType = GameObjectType.Monster;           
         }
 
-        public void init(int templateId)
+        public override void init(int templateId)
         {
-            TemplateId = templateId;
+            base.init(templateId);
 
             MonsterData monsterData = null;
             DataManager.MonsterDict.TryGetValue(TemplateId, out monsterData);

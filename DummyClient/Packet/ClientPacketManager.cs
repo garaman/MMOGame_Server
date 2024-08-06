@@ -1,4 +1,3 @@
-using DummyClient.Packet;
 using Google.Protobuf;
 using Google.Protobuf.Protocol;
 using ServerCore;
@@ -23,7 +22,7 @@ class PacketManager
 	public Action<PacketSession, IMessage, ushort> CustomHandler { get; set; }
 		
 	public void Register()
-	{
+	{		
 		_onRecv.Add((ushort)MsgId.SEnterGame, MakePacket<S_EnterGame>);
 		_handler.Add((ushort)MsgId.SEnterGame, PacketHandler.S_EnterGameHandler);		
 		_onRecv.Add((ushort)MsgId.SLeaveGame, MakePacket<S_LeaveGame>);
@@ -55,7 +54,11 @@ class PacketManager
 		_onRecv.Add((ushort)MsgId.SChangeStat, MakePacket<S_ChangeStat>);
 		_handler.Add((ushort)MsgId.SChangeStat, PacketHandler.S_ChangeStatHandler);		
 		_onRecv.Add((ushort)MsgId.SPing, MakePacket<S_Ping>);
-		_handler.Add((ushort)MsgId.SPing, PacketHandler.S_PingHandler);
+		_handler.Add((ushort)MsgId.SPing, PacketHandler.S_PingHandler);		
+		_onRecv.Add((ushort)MsgId.SChangeRoom, MakePacket<S_ChangeRoom>);
+		_handler.Add((ushort)MsgId.SChangeRoom, PacketHandler.S_ChangeRoomHandler);		
+		_onRecv.Add((ushort)MsgId.SInteract, MakePacket<S_Interact>);
+		_handler.Add((ushort)MsgId.SInteract, PacketHandler.S_InteractHandler);
 	}
 
 	public void OnRecvPacket(PacketSession session, ArraySegment<byte> buffer)

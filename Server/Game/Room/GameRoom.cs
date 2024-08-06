@@ -16,12 +16,13 @@ namespace Server.Game.Room
 {
     public partial class GameRoom : JobSerializer
     {
-        public const int VisionCells = 5;
+        public const int VisionCells = 10;
         public int RoomID { get; set; }
 
         Dictionary<int, Player> _players = new Dictionary<int, Player>();
         Dictionary<int, Monster> _monsters = new Dictionary<int, Monster>();
         Dictionary<int, Projectile> _projectiles = new Dictionary<int, Projectile>();
+        Dictionary<int, Npc> _npcs = new Dictionary<int, Npc>();
 
         public Zone[,] Zones { get; set; }
         public int ZoneCells { get; set; }
@@ -60,15 +61,8 @@ namespace Server.Game.Room
                     Zones[y,x] = new Zone(y,x);
                 }
             }
-            
-            // 임시
-            for(int i = 0; i < 50; i++)
-            {
-                Monster monster = ObjectManager.Instance.Add<Monster>();
-                monster.init(1);
-                monster.CellPos = new Vector2Int(5, 5);
-                this.EnterGame(monster, randomPos: true);
-            }            
+
+            RoomSetting(mapId);                              
         }
 
         public void Update()
@@ -102,6 +96,7 @@ namespace Server.Game.Room
             {
                 Player player = (Player)gameObject;
                 _players.Add(gameObject.Id, player);
+                gameObject.TemplateId = player.TemplateId;
                 player.Room = this;
                 player.RefreshAddionalStat();
 
@@ -122,6 +117,7 @@ namespace Server.Game.Room
             {
                 Monster monster = (Monster)gameObject;
                 _monsters.Add(gameObject.Id, monster);
+                gameObject.TemplateId = monster.TemplateId;
                 monster.Room = this;
                 Map.ApplyMove(monster, new Vector2Int(monster.CellPos.x, monster.CellPos.y));
                 GetZone(monster.CellPos).Monsters.Add(monster);
@@ -130,12 +126,24 @@ namespace Server.Game.Room
             }
             else if (type == GameObjectType.Projectile)
             {
-                Projectile projectile = (Projectile)gameObject;
+                Projectile projectile = (Projectile)gameObject;                
                 _projectiles.Add(gameObject.Id, projectile);
+                gameObject.TemplateId = projectile.TemplateId;
                 projectile.Room = this;
                 GetZone(projectile.CellPos).Projectiles.Add(projectile);
 
                 projectile.Update();
+            }
+            else if (type == GameObjectType.Npc)
+            {
+                Npc npc = (Npc)gameObject;
+                _npcs.Add(gameObject.Id, npc);
+                gameObject.TemplateId = npc.TemplateId;
+                npc.Room = this;
+                Map.ApplyMove(npc, new Vector2Int(npc.CellPos.x, npc.CellPos.y));
+                GetZone(npc.CellPos).Npcs.Add(npc);
+
+                npc.Update();
             }
 
             // 타인한테 정보 전송
@@ -185,6 +193,16 @@ namespace Server.Game.Room
                 Map.ApplyLeave(projectile);
                 projectile.Room = null;
             }
+            else if (type == GameObjectType.Npc)
+            {
+                Npc npc = null;
+                if (_npcs.Remove(objectId, out npc) == false) { return; }
+
+                cellPos = npc.CellPos;
+
+                Map.ApplyLeave(npc);
+                npc.Room = null;
+            }
             else
             {
                 return;
@@ -206,8 +224,7 @@ namespace Server.Game.Room
             }
             return null;
         }
-
-        
+                
         public Player FindClosestPlayer(Vector2Int pos, int range)
         {
             List<Player> players = GetAdiacentPlayer(pos, range);
@@ -243,9 +260,9 @@ namespace Server.Game.Room
             }
         }
 
-        public List<Player> GetAdiacentPlayer(Vector2Int pos, int range)
+        public List<Player> GetAdiacentPlayer(Vector2Int pos, int range = VisionCells)
         {
-            List<Zone> zones = GetAdiacentZones(pos);
+            List<Zone> zones = GetAdiacentZones(pos, range);
             return zones.SelectMany(z => z.Players).ToList();
         }
 
@@ -280,6 +297,30 @@ namespace Server.Game.Room
             }
 
             return zones.ToList();
+        }
+
+        void RoomSetting(int mapId)
+        {
+            switch (mapId)
+            {
+                case 1:
+                    {
+                        Npc npc = ObjectManager.Instance.Add<Npc>();
+                        npc.init(1);
+                        this.EnterGame(npc, randomPos: false);
+                    }                    
+                    break;
+                case 2:
+                    {
+                        for (int i = 0; i < 20; i++)
+                        {
+                            Monster monster = ObjectManager.Instance.Add<Monster>();
+                            monster.init(1);
+                            this.EnterGame(monster, randomPos: true);
+                        }
+                    }
+                    break;
+            }
         }
     }
 }

@@ -17,6 +17,11 @@ namespace Server.Game.Object
             get { return Info.ObjectId;  } 
             set { Info.ObjectId = value; }
         }
+        public int TemplateId 
+        {
+            get { return Info.TemplateId; }
+            set { Info.TemplateId = value; }
+        }
 
         public GameRoom Room { get; set; }
         public ObjectInfo Info { get; set; } = new ObjectInfo();
@@ -66,6 +71,11 @@ namespace Server.Game.Object
         {
             Info.PosInfo = PosInfo;
             Info.StatInfo = Stat;
+        }
+
+        public virtual void init(int templateId)
+        {
+            TemplateId = templateId;
         }
 
         public Vector2Int GetFrontCellPos()
