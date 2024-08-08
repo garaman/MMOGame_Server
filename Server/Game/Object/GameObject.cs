@@ -122,7 +122,9 @@ namespace Server.Game.Object
             if (Room == null) { return; }
 
             damage = Math.Max(damage - TotalDefence,0);
-            Stat.Hp = Math.Max(Stat.Hp - damage, 0);            
+            Stat.Hp = Math.Max(Stat.Hp - damage, 0);
+
+            //Console.WriteLine($"{Info.Name} / {Stat.Hp}");
 
             S_ChangeHp chagePacket = new S_ChangeHp();
             chagePacket.ObjectId = Id;

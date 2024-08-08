@@ -33,6 +33,7 @@ namespace Server.DB
         public int Attack { get; set; }
         public float Speed { get; set; }
         public int TotalExp { get; set; }
+        public int Gold { get; set; }
     }
 
     [Table("Item")]

@@ -80,8 +80,8 @@ namespace Server.Game.Room
                 Vector2Int respawnPos;
                 while (true)
                 {
-                    respawnPos.x = _rand.Next(Map.MinX, Map.MaxX);
-                    respawnPos.y = _rand.Next(Map.MinY, Map.MaxY);
+                    respawnPos.x = _rand.Next(Map.MinX+1, Map.MaxX-1);
+                    respawnPos.y = _rand.Next(Map.MinY+1, Map.MaxY-1);
 
                     if (Map.Find(respawnPos) == null)
                     {

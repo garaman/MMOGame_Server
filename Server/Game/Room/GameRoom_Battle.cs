@@ -56,15 +56,16 @@ namespace Server.Game.Room
             Broadcast(player.CellPos, skill);
 
             Data.Skill skillData = null;
-            if(DataManager.SkillDict.TryGetValue(skillPacket.Info.SkillId, out skillData) == false) { return; }   
+            if(DataManager.SkillDict.TryGetValue(skillPacket.Info.SkillId, out skillData) == false) { return; }
 
-            switch(skillData.skillType)
+            Vector2Int skillPos = player.GetFrontCellPos(info.PosInfo.MoveDir);
+            GameObject target = Map.Find(skillPos);
+
+            switch (skillData.skillType)
             {
                 case SkillType.SkillAuto:
                     {
-                        // TODO 데미지 판정.
-                        Vector2Int skillPos = player.GetFrontCellPos(info.PosInfo.MoveDir);
-                        GameObject target = Map.Find(skillPos);
+                        // TODO 데미지 판정.                        
                         if (target != null)
                         {
                             Console.WriteLine("Hit GameObject!!");
@@ -73,6 +74,11 @@ namespace Server.Game.Room
                     break;
                 case SkillType.SkillProjectile:
                     {
+                        if (target != null)
+                        {
+                            target.OnDamaged(player, player.TotalAttack);
+                        }
+
                         Arrow arrow = ObjectManager.Instance.Add<Arrow>();
                         arrow.init(2);
                         if (arrow == null) { return; }

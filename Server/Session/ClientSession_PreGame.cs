@@ -55,7 +55,8 @@ namespace Server
                                 MaxHp = playerDb.MaxHp,
                                 Attack = playerDb.Attack,
                                 Speed = playerDb.Speed,
-                                TotalExp = playerDb.TotalExp
+                                TotalExp = playerDb.TotalExp,
+                                Gold = playerDb.Gold
                             }
                         };
 
@@ -173,6 +174,7 @@ namespace Server
                         Attack = stat.Attack,
                         Speed = stat.Speed,
                         TotalExp = 0,
+                        Gold = stat.Gold,
                         AccountDbId = AccountDbId
                     };
 

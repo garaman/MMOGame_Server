@@ -95,4 +95,33 @@ class PacketHandler
         
         clientSession.HandleChangeRoom(player, room, changePacket);
     }
+
+    public static void C_BuyItemHandler(PacketSession session, IMessage packet)
+    {
+        C_BuyItem buyPacket = packet as C_BuyItem;        
+        ClientSession clientSession = session as ClientSession;
+
+        Player player = clientSession.MyPlayer;
+        if (player == null) { return; }
+
+        GameRoom room = player.Room;
+        if (room == null) { return; }
+
+        DbTransaction.BuyItem(player, room, buyPacket);
+    }
+
+    public static void C_SellItemHandler(PacketSession session, IMessage packet)
+    {
+        C_SellItem sellPacket = packet as C_SellItem;
+        ClientSession clientSession = session as ClientSession;
+
+        Player player = clientSession.MyPlayer;
+        if (player == null) { return; }
+
+        GameRoom room = player.Room;
+        if (room == null) { return; }
+
+        DbTransaction.SellItem(player, room, sellPacket);
+
+    }
 }

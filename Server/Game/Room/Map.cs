@@ -110,11 +110,12 @@ namespace Server.Game.Room
         public GameObject Find(Vector2Int cellPos)
         {
             if (cellPos.x < MinX || cellPos.x > MaxX) { return null; }
-            if (cellPos.y < MinY || cellPos.y > MaxY) { return null; }
+            if (cellPos.y < MinY || cellPos.y > MaxY) { return null; }            
 
             int x = cellPos.x - MinX;
             int y = MaxY - cellPos.y;
             if (x >= MaxX - MinX || y >= MaxY - MinY) { return null; }
+            if (_collision[y,x] == true) { return null;}
 
             return _objects[y, x];
         }

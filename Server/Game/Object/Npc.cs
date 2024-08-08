@@ -41,7 +41,7 @@ namespace Server.Game.Object
         // FSM(Finite State Machine)
         public override void Update()
         {
-            CheckPlayer();
+            //CheckPlayer();
 
             // 5프레임
             if (Room != null)
