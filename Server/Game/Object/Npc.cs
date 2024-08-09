@@ -32,7 +32,7 @@ namespace Server.Game.Object
             Info.Name = $"{npcData.name}";
             npcType = npcData.npcType;
             Info.PosInfo.PosX = 3;
-            Info.PosInfo.PosY = 3;
+            Info.PosInfo.PosY = 7;
 
             State = CreatureState.Idle;
         }
