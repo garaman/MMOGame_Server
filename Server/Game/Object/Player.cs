@@ -30,8 +30,6 @@ namespace Server.Game.Object
         {
             ObjectType = GameObjectType.Player;
             Vision = new VisionCube(this);
-
-            if(Hp <= 0) { Hp = 1; }
         }
 
         public override void OnDamaged(GameObject attacker, int damage)

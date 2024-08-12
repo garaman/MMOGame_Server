@@ -99,14 +99,20 @@ namespace Server.Game.Room
                 gameObject.TemplateId = player.TemplateId;
                 player.Room = this;
                 player.RefreshAddionalStat();
-
+                if(player.Info.StatInfo.Hp <= 0)
+                {
+                    player.Info.StatInfo.Hp = player.Info.StatInfo.MaxHp;
+                }
+                
+                
                 Map.ApplyMove(player, new Vector2Int(player.CellPos.x, player.CellPos.y));
                 GetZone(player.CellPos).Players.Add(player);
+
 
                 // 본인한테 정보 전송
                 {
                     S_EnterGame enterPacket = new S_EnterGame();
-                    enterPacket.Player = player.Info;
+                    enterPacket.Player = player.Info;                    
                     player.Session.Send(enterPacket);
 
                     player.Vision.Update();

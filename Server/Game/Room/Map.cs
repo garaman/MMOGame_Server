@@ -297,6 +297,7 @@ namespace Server.Game.Room
                 // 제일 좋은 후보를 찾는다
                 PQNode pqnode = pq.Pop();
                 Pos node = new Pos(pqnode.Y, pqnode.X);
+
                 // 동일한 좌표를 여러 경로로 찾아서, 더 빠른 경로로 인해서 이미 방문(closed)된 경우 스킵
                 if (closeList.Contains(node)) { continue; }                
 
@@ -314,7 +315,6 @@ namespace Server.Game.Room
                     // 너무 멀면 스킵
                     if(Math.Abs(pos.Y - next.Y) + Math.Abs(pos.X - next.X) > maxDist) { continue; }
 
-
                     // 유효 범위를 벗어났으면 스킵
                     // 벽으로 막혀서 갈 수 없으면 스킵
                     if (next.Y != dest.Y || next.X != dest.X)
@@ -328,6 +328,7 @@ namespace Server.Game.Room
                     // 비용 계산
                     int g = pqnode.G + _cost[i];
                     int h = 10 * ((dest.Y - next.Y) * (dest.Y - next.Y) + (dest.X - next.X) * (dest.X - next.X));
+
                     // 다른 경로에서 더 빠른 길 이미 찾았으면 스킵
                     int value = 0;
                     if(openList.TryGetValue(next, out value) == false)
